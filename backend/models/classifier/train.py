@@ -18,6 +18,10 @@ df = pd.read_csv(csv_path)
 df["text"]  = df["text"].str.lower()
 df["label"] = df["label"].astype(float)
 
+# ── Tuneable safety knob ──────────────────────────────────────────────────────
+# Lower = more aggressive HIGH routing (higher recall, higher FPR)
+# Raise to reduce false alarms once FNR is acceptably low
+MAX_ACCEPTABLE_FNR = 0.05
 
 # ── Band assignment ───────────────────────────────────────────────────────────
 def assign_band(score):
@@ -34,7 +38,6 @@ print(df["label"].value_counts().sort_index())
 print("\nBand distribution:")
 print(df["band"].value_counts())
 
-
 # ── Train/test split ──────────────────────────────────────────────────────────
 X_train, X_test, y_train, y_test = train_test_split(
     df["text"], df[["label", "band"]],
@@ -47,12 +50,10 @@ y_test_label  = y_test["label"]
 y_train_band  = y_train["band"]
 y_test_band   = y_test["band"]
 
-
 # ── Shared TF-IDF vectorizer ──────────────────────────────────────────────────
 vectorizer  = TfidfVectorizer(ngram_range=(1, 2), min_df=1, max_df=0.95, sublinear_tf=True)
 X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec  = vectorizer.transform(X_test)
-
 
 # ── Stage 1: coarse band classifier ──────────────────────────────────────────
 stage1 = LogisticRegression(max_iter=2000, C=5.0)
@@ -73,17 +74,17 @@ def high_recall(y_true, y_pred):
 high_cv = cross_val_score(stage1, X_train_vec, y_train_band, cv=cv, scoring=make_scorer(high_recall))
 print(f"  {'HIGH recall':>14}: {high_cv.mean():.4f} ± {high_cv.std():.4f}  ← most important")
 
-
 # ── Threshold calibration ─────────────────────────────────────────────────────
 HIGH_IDX = list(stage1.classes_).index("HIGH")
 s1_proba = stage1.predict_proba(X_test_vec)
 
 print(f"\n── Threshold sweep for HIGH (test set) ──")
-print(f"  {'Threshold':>10}  {'HIGH FNR':>10}  {'HIGH FPR':>10}  {'Accuracy':>10}")
+print(f"  {'Threshold':>10}  {'HIGH FNR':>10}  {'HIGH FPR':>10}  {'Accuracy':>10}  {'Selected':>10}")
 
-bands       = ["LOW", "MEDIUM", "HIGH"]
+bands = ["LOW", "MEDIUM", "HIGH"]
 best_thresh = 0.5
 best_fpr    = 1.0
+sweep_results = []
 
 for thresh in np.arange(0.20, 0.55, 0.05):
     preds = []
@@ -102,14 +103,19 @@ for thresh in np.arange(0.20, 0.55, 0.05):
     fnr  = fn / (fn + tp) if (fn + tp) > 0 else 0.0
     fpr  = fp / (fp + tn) if (fp + tn) > 0 else 0.0
     acc  = accuracy_score(y_test_band, preds)
-    print(f"  {thresh:>10.2f}  {fnr:>10.4f}  {fpr:>10.4f}  {acc:>10.4f}")
+    sweep_results.append((thresh, fnr, fpr, acc, preds))
 
-    if fnr == 0.0 and fpr < best_fpr:
+    # Select: lowest FPR among thresholds where FNR <= MAX_ACCEPTABLE_FNR
+    if fnr <= MAX_ACCEPTABLE_FNR and fpr < best_fpr:
         best_fpr    = fpr
         best_thresh = thresh
 
-print(f"\n  → Selected threshold: {best_thresh:.2f} (FNR=0 with lowest FPR)")
+for thresh, fnr, fpr, acc, _ in sweep_results:
+    selected = " ← selected" if thresh == best_thresh else ""
+    print(f"  {thresh:>10.2f}  {fnr:>10.4f}  {fpr:>10.4f}  {acc:>10.4f}  {selected}")
 
+print(f"\n  → Selected threshold: {best_thresh:.2f} "
+      f"(lowest FPR with FNR ≤ {MAX_ACCEPTABLE_FNR})")
 
 def apply_threshold(proba, threshold, high_idx, classes):
     preds = []
@@ -138,7 +144,6 @@ for i, band in enumerate(bands):
 
 print("\nFull classification report (Stage 1):")
 print(classification_report(y_test_band, s1_preds, labels=bands, digits=4))
-
 
 # ── Stage 2: one fine-grained classifier per band ────────────────────────────
 BAND_RANGES   = {"LOW": (1, 3), "MEDIUM": (4, 7), "HIGH": (8, 10)}
@@ -179,7 +184,6 @@ for band, (lo, hi) in BAND_RANGES.items():
               f"(n_test={n})")
     else:
         print(f"  {band}: no test samples for evaluation")
-
 
 # ── Full-system evaluation ────────────────────────────────────────────────────
 def pipeline_predict_score(vec, band_pred):
@@ -257,7 +261,6 @@ else:
     ):
         print(f"  actual={a:.0f}  pred={p:.2f}  delta={a-p:.2f}")
 print(f"  ({int(meaningful.sum())} significant misses out of {int(under_mask.sum())} total under-predictions)")
-
 
 # ── Persist artifacts ─────────────────────────────────────────────────────────
 pickle.dump(vectorizer,    open(OUT_DIR / "vectorizer.pkl",    "wb"))
