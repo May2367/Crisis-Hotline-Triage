@@ -1,8 +1,5 @@
-__pycache__/
-*.pyc
-.env
-
-node_modules/
-build/
-
-.DS_Store
+# Ignore the virtual environment
+venv/
+.venv/
+# Ignore temporary audio files
+*.wav

@@ -1,0 +1,999 @@
+text,label
+"I am just sitting on my porch watching the birds",1.0
+"I'm playing a game of soccer with my friends at the park",1.0
+"I am boiling some water to make a cup of tea",1.0
+"I'm walking my dog around the block",1.0
+"I'm just heading to the grocery store to buy milk",1.0
+"I am watching a movie on my couch right now",1.0
+"I'm folding my laundry and listening to a podcast",1.0
+"I just finished washing the dishes in the kitchen",1.0
+"I'm typing up a report for my manager at work",1.0
+"I am planted some flowers in my garden this morning",1.0
+"I'm waiting for my friend to arrive for dinner",1.0
+"I am reading a book about the history of architecture",1.0
+"I'm just checking my email before I go to bed",1.0
+"I am vacuuming the living room carpet",1.0
+"I'm listening to the rain hit the window",1.0
+"I am organizing my bookshelf by color",1.0
+"I'm taking a nap because I have some free time",1.0
+"I am drawing a picture in my sketchbook",1.0
+"I'm looking for my keys because I misplaced them",1.0
+"I am eating a sandwich for lunch",1.0
+"I'm scrolling through social media on my phone",1.0
+"I am watering my indoor plants",1.0
+"I'm writing a grocery list for the weekend",1.0
+"I am putting on my shoes to go for a jog",1.0
+"I'm fixing a loose screw on the cabinet door",1.0
+"I am charging my laptop battery",1.0
+"I'm waiting in line at the post office",1.0
+"I am browsing for new shoes online",1.0
+"I'm sitting at a cafe drinking a latte",1.0
+"I am watching the sunset from my balcony",1.0
+"I'm talking to my mom on the phone about her cat",1.0
+"I am cleaning the lint filter in the dryer",1.0
+"I'm putting away the groceries I just bought",1.0
+"I am setting the table for breakfast",1.0
+"I'm looking at old photos in a photo album",1.0
+"I am stretching after my morning workout",1.0
+"I'm feeding the goldfish in the tank",1.0
+"I am taking out the trash and recycling",1.0
+"I'm trying to decide what to wear to the party",1.0
+"I am listening to a new album that just came out",1.0
+"I'm waiting for the bus at the corner stop",1.0
+"I am playing a card game with my siblings",1.0
+"I'm making a smoothie with bananas and spinach",1.0
+"I am painting the guest room a light blue color",1.0
+"I'm walking through the museum looking at art",1.0
+"I am practicing my guitar scales",1.0
+"I'm watching a documentary about deep sea creatures",1.0
+"I am organizing the files on my desktop",1.0
+"I'm looking at the stars through my window",1.0
+"I am packing my bag for a trip tomorrow",1.0
+"I'm sitting in the library studying for my test",1.0
+"I am trying out a new recipe for pasta",1.0
+"I'm walking along the beach looking for shells",1.0
+"I am brushing my hair in front of the mirror",1.0
+"I'm waiting for the oven to preheat",1.0
+"I am filling out a crossword puzzle",1.0
+"I'm browsing the aisles at the hardware store",1.0
+"I am sitting in a park bench reading the news",1.0
+"I'm taking a slow drive through the countryside",1.0
+"I am rearranging the furniture in my bedroom",1.0
+"I'm looking for a specific pen in my drawer",1.0
+"I am chopping vegetables for a salad",1.0
+"I'm watching the snow fall outside",1.0
+"I am listening to the radio while I drive",1.0
+"I'm waiting for my laundry to finish drying",1.0
+"I am checking the weather forecast for tomorrow",1.0
+"I'm sitting on the floor playing with my cat",1.0
+"I am putting up some new curtains",1.0
+"I'm walking to the library to return some books",1.0
+"I am making a cup of coffee with my new machine",1.0
+"I'm looking at the menu at a new restaurant",1.0
+"I am doing some light yoga in my living room",1.0
+"I'm waiting for my computer to restart",1.0
+"I am cleaning the mirrors in the bathroom",1.0
+"I'm sitting in the sun getting some vitamin D",1.0
+"I am writing a thank you note to my aunt",1.0
+"I'm looking for a movie to watch on Netflix",1.0
+"I am putting my summer clothes into storage",1.0
+"I'm walking through the park on a sunny day",1.0
+"I am making a list of goals for the new year",1.0
+"I'm sitting at my desk watching the clouds",1.0
+"I am trying to learn how to knit a scarf",1.0
+"I'm waiting for the toaster to pop up",1.0
+"I am looking at the flowers in the florist shop",1.0
+"I'm taking a deep breath and relaxing",1.0
+"I am cleaning the crumbs off the kitchen counter",1.0
+"I'm listening to a bird chirping outside",1.0
+"I am checking the mail in my mailbox",1.0
+"I'm sitting in the waiting room for my haircut",1.0
+"I am putting a stamp on an envelope",1.0
+"I'm looking at a map to plan my hike",1.0
+"I am tying my shoelaces before I go out",1.0
+"I'm watching the neighbor mow their lawn",1.0
+"I am drinking a tall glass of cold water",1.0
+"I'm sitting on the train looking out the window",1.0
+"I am putting my keys on the hook by the door",1.0
+"I'm looking for my sunglasses in my bag",1.0
+"I am smelling the fresh air outside",1.0
+"I'm just living my life day by day",1.0
+"Everything is perfectly normal and quiet here",1.0
+"Hey, the neighbors are playing music way too loud again",2.0
+"Ugh, I just tripped and scraped my knee on the sidewalk",2.0
+"My internet has been out for three hours and it's so frustrating",2.0
+"Look, someone left a bunch of trash on my front lawn",2.0
+"Man, I can't find my wallet anywhere and I've looked everywhere",2.0
+"Is there a power outage? My lights just flickered and went off",2.0
+"So annoying, my car won't start and I'm going to be late for work",2.0
+"Hey, there's a dog barking incessantly next door, it's been an hour",2.0
+"I think I might have a mild cold, my throat is a little scratchy",2.0
+"Did anyone report the broken street light on 5th and Main?",2.0
+"Someone parked right in front of my driveway and I can't get out",2.0
+"My sink is leaking and getting the floor all wet",2.0
+"There is a cat stuck in the tree in my backyard",2.0
+"Excuse me, I left my bag on the bus and need to find it",2.0
+"The local park is covered in litter after the festival",2.0
+"I have a splinter in my finger and I can't get it out",2.0
+"My computer keeps freezing every time I try to open a file",2.0
+"There's a weird smell coming from the drain in the kitchen",2.0
+"Can someone check the potholes on Oak Street? They are getting bad",2.0
+"I lost my umbrella and it's starting to drizzle",2.0
+"My phone screen cracked and now I can't read my messages",2.0
+"The mail hasn't come yet and I'm waiting on a package",2.0
+"I accidentally locked myself out of the house, no one is home",2.0
+"My coffee is cold and the shop won't give me a refund",2.0
+"There's a group of kids loitering by the convenience store",2.0
+"I keep hearing a tapping sound on the window, probably a branch",2.0
+"The vending machine took my dollar and didn't give me a snack",2.0
+"I have a bit of a headache from staring at the screen too long",2.0
+"My neighbor's sprinklers are hitting my window and it's loud",2.0
+"I think I left the stove on but I'm already at the office",2.0
+"There's a lot of traffic today for some reason",2.0
+"I dropped my sandwich on the floor, what a waste",2.0
+"My shoelace broke and I don't have a spare",2.0
+"The library is closed today even though the sign says it's open",2.0
+"I've got a really itchy bug bite on my ankle",2.0
+"Someone didn't pick up after their dog on the sidewalk",2.0
+"My heater is making a weird clicking noise tonight",2.0
+"I can't get this jar of pickles open no matter how hard I try",2.0
+"There is a small crack in my windshield from a pebble",2.0
+"I missed my flight because the alarm didn't go off",2.0
+"The elevator is out of service in my building again",2.0
+"I'm feeling a little bit tired today, just low energy",2.0
+"My favorite shirt got a stain on it at lunch",2.0
+"The ATM is out of cash and I really need some",2.0
+"There's a lot of construction noise outside my apartment",2.0
+"I keep getting spam calls every ten minutes",2.0
+"My tooth is a little sensitive to cold water today",2.0
+"I forgot my password and I'm locked out of my account",2.0
+"The bus is running twenty minutes behind schedule",2.0
+"I have a mild sunburn from being at the beach",2.0
+"My glasses are foggy and I can't see anything",2.0
+"The milk in the fridge smells a little sour",2.0
+"I think I'm losing my voice, it sounds raspy",2.0
+"Someone stole my package off the porch, I'm so mad",2.0
+"My garden is full of weeds and I don't have time to pull them",2.0
+"The remote control is missing again, probably under the couch",2.0
+"I've got a bit of a stiff neck from sleeping funny",2.0
+"There is no toilet paper left in the bathroom stall",2.0
+"The grocery store ran out of the bread I like",2.0
+"My pen ran out of ink right in the middle of a sentence",2.0
+"I have a small blister on my heel from these new shoes",2.0
+"The wifi signal is really weak in this room",2.0
+"I accidentally deleted an important email",2.0
+"My laundry is still damp even after a full cycle",2.0
+"I'm pretty sure I have a cavity starting to hurt",2.0
+"There is a fly in my house and I can't catch it",2.0
+"I got mud on my new white sneakers",2.0
+"The pizza delivery is over an hour late",2.0
+"My belt loop got caught on the door handle and ripped",2.0
+"I forgot to bring my lunch to work today",2.0
+"The sink is draining really slowly this morning",2.0
+"I have a tiny scratch on my phone screen",2.0
+"The flashlight batteries are dead and I don't have extras",2.0
+"My neighbor is parked slightly over the line into my spot",2.0
+"The movie theater was way too air conditioned",2.0
+"I can't find a matching pair of socks",2.0
+"My umbrella flipped inside out because of the wind",2.0
+"I've been on hold for thirty minutes with customer service",2.0
+"The printer is jammed and I need this document now",2.0
+"I keep sneezing, must be the pollen outside",2.0
+"My ice cream melted before I could finish it",2.0
+"I've got a bit of a sore muscle from the gym",2.0
+"The battery in my smoke detector is chirping",2.0
+"I accidentally stepped in a puddle and my sock is wet",2.0
+"There is a weird buzzing sound coming from the fridge",2.0
+"I'm slightly annoyed that it's raining on my day off",2.0
+"My shoelaces keep coming untied every five minutes",2.0
+"The store clerk was kind of rude to me just now",2.0
+"I've got a little bit of indigestion from that spicy food",2.0
+"My alarm went off but I slept right through it",2.0
+"The zipper on my jacket is stuck and won't budge",2.0
+"I'm a little frustrated because I can't solve this puzzle",2.0
+"There's a leaf stuck in my hair and I didn't notice",2.0
+"The water pressure in the shower is really low",2.0
+"I've got a small bruise on my arm and I don't know how",2.0
+"The post office lost my letter, I'm sure of it",2.0
+"My headphones are crackling and it's driving me crazy",2.0
+"I'm just having one of those days where nothing goes right",2.0
+"I keep dropping my phone today for some reason",2.0
+"There's a smudge on my window that won't come off",2.0
+"My power has been out for six hours now and I’m starting to get worried about the food",3.0
+"I’ve been trying to reach my doctor all day but nobody is picking up the phone",3.0
+"Honestly I just feel really lonely today and it’s getting hard to ignore",3.0
+"Someone stole my bike from the rack outside and I really need it for work",3.0
+"There is a massive pothole on my street that just popped someone's tire",3.0
+"I think I’m coming down with the flu because I can’t stop shivering",3.0
+"Hey I’ve been waiting for my prescription for two days and the pharmacy is closed",3.0
+"My basement is starting to smell like sewage and I don’t know what to do",3.0
+"I’m having a really rough time at school and I just feel like I'm failing everything",3.0
+"Someone hit my parked car and just drove off without leaving a note",3.0
+"I can't get my front door to lock properly and I'm home alone tonight",3.0
+"My dog ate something weird and now he's been acting really lethargic all morning",3.0
+"I’ve had this splitting headache for twelve hours and medicine isn't helping",3.0
+"There's a stray dog wandering near the highway and I'm afraid it's going to get hit",3.0
+"I just found out my identity might have been stolen and I'm panicked about my bank account",3.0
+"The ceiling in my bathroom is leaking and there's a huge water spot forming",3.0
+"I’ve been stuck at the airport for ten hours and they keep canceling my flights",3.0
+"My grandmother hasn't answered her phone all day and she usually calls me by now",3.0
+"I'm feeling really overwhelmed with these bills and I don't see a way to pay them",3.0
+"Someone is loitering in the hallway of my apartment building and they don't live here",3.0
+"I think I have a bad infection in my tooth because my whole jaw is throbbing",3.0
+"My car is making a loud grinding noise every time I hit the brakes",3.0
+"There is a dead animal in the middle of the road and it's causing traffic issues",3.0
+"I’ve been feeling really depressed lately and I just can't seem to get out of bed",3.0
+"My credit card was declined at the store and I know there should be money on it",3.0
+"I can't find my passport and my flight leaves in six hours",3.0
+"There is a strange man standing across the street just staring at my house",3.0
+"My air conditioning stopped working and it's almost ninety degrees in here",3.0
+"I keep getting these weird dizzy spells every time I stand up too fast",3.0
+"Someone threw a rock through my side window while I was at work",3.0
+"I’m trying to cancel this subscription but the company is making it impossible",3.0
+"My phone was stolen out of my bag while I was on the subway",3.0
+"I’ve been coughng for three weeks and I’m starting to get worried about my lungs",3.0
+"There's a large tree branch hanging dangerously low over my driveway",3.0
+"I just got a notice that my water is being shut off but I paid the bill",3.0
+"My son got into a fight at school and I have to go pick him up now",3.0
+"I’m feeling a lot of anxiety about this job interview tomorrow",3.0
+"There is a deep crack forming in the foundation of my house",3.0
+"I lost my wedding ring at the park and I'm absolutely devastated",3.0
+"My landlord hasn't fixed the heat and it's freezing in my apartment",3.0
+"I found a swarm of bees living in the wall of my garage",3.0
+"I think I’m being followed by a black car but I’m not entirely sure",3.0
+"My computer crashed and I lost all of my final project files",3.0
+"I’ve been having some weird chest tightness but it goes away when I sit down",3.0
+"There's a massive sinkhole forming in the middle of the parking lot",3.0
+"I can't get in touch with my kids' daycare and they were supposed to be home",3.0
+"My back is in so much pain I can't even bend over to put on my shoes",3.0
+"Someone is using my photos to make fake profiles on the internet",3.0
+"I’m worried about my drinking and I think I need to find a meeting",3.0
+"The street is flooded after the storm and I can't get my car out",3.0
+"My stove is leaking gas I can smell it but the knobs are all off",3.0
+"I’ve been having a lot of trouble breathing lately because of the humidity",3.0
+"Someone broke into the mailboxes in our lobby and took everyone's mail",3.0
+"I’m feeling very hopeless about my situation right now",3.0
+"My cat got out last night and she still hasn't come back home",3.0
+"I have a high fever and I'm starting to feel a bit delusional",3.0
+"There is a group of people arguing very loudly in the street outside",3.0
+"I think I left my medication at the hotel and I'm three hours away",3.0
+"My daughter is being bullied online and she won't stop crying",3.0
+"I keep hearing a scratching sound inside the walls of my bedroom",3.0
+"The fridge died while we were on vacation and all the food is rotten",3.0
+"I’m so stressed out that I’ve started losing my hair in patches",3.0
+"Someone is sleeping in the vestibule of my store and I need to open up",3.0
+"I can't find my dog's leash and he really needs to go out",3.0
+"My knee just buckled while I was walking and now I can't put weight on it",3.0
+"I received a very threatening letter in the mail today",3.0
+"I’m worried that my house is haunted because things keep moving",3.0
+"The garage door is stuck halfway open and I can't get it to move",3.0
+"I’ve been feeling very lightheaded all afternoon",3.0
+"Someone is ringing my doorbell at 3 AM and I'm scared to look",3.0
+"My oven caught fire for a second but I put it out with baking soda",3.0
+"I’m struggling with some very dark thoughts today",3.0
+"There is a strange chemical smell coming from the factory nearby",3.0
+"I can't find my car in this massive parking garage and it's dark",3.0
+"My water heater exploded and there is water everywhere in the basement",3.0
+"I’m having a hard time focusing on anything because I’m so sad",3.0
+"Someone spray painted graffiti all over my fence last night",3.0
+"I think I have a spider bite on my neck that is getting very red",3.0
+"The neighbor's tree fell onto my roof but it didn't break through",3.0
+"I’m stuck in an elevator and the alarm button isn't working",3.0
+"I’ve been crying for two hours and I don't even know why",3.0
+"Someone is trying to scam my elderly mother out of her savings",3.0
+"My car ran out of gas on the side of a very busy road",3.0
+"I have a rash all over my body and it's starting to blister",3.0
+"I'm feeling very disconnected from reality lately",3.0
+"There's a lot of smoke in the air outside but I don't see a fire",3.0
+"My sink is overflowing and I can't find the shut-off valve",3.0
+"I’m worried about my mental health and I think I need help",3.0
+"Someone is knocking on my window and I live on the second floor",3.0
+"My son has been missing for two hours but he's usually home by now",3.0
+"I think I have a piece of glass stuck in my foot and it's deep",3.0
+"There is a wild animal trapped in my chimney",3.0
+"I’ve been having some really bad stomach cramps all night",3.0
+"Someone stole my purse while I was at the grocery store",3.0
+"I'm feeling very pressured and like I'm about to snap",3.0
+"My window was shattered by a baseball and there's glass everywhere",3.0
+"I can't get my breathing back to normal after that panic attack",3.0
+"There's a huge leak in the water main outside my house",3.0
+"I'm worried that someone is watching me through my webcam",3.0
+"I just feel like everything is going wrong at the same time",3.0
+"There is a huge, deep flood in the middle of the street and cars are getting stuck",4.0
+"I can hear a man and woman screaming at each other in the apartment next door and it sounds like things are breaking",4.0
+"My car just stalled in the middle of a high-speed intersection and I can't get it to move",4.0
+"I’ve been trying to wake up my roommate for ten minutes and they are breathing but won't open their eyes",4.0
+"Somebody is trying to force my window open from the outside right now",4.0
+"My chest feels incredibly heavy and I’m starting to have trouble catching my breath",4.0
+"I just saw a car hit a cyclist and the driver didn't even stop to check on them",4.0
+"There is a massive thick cloud of black smoke coming from the house across the street",4.0
+"I’m lost in this hiking trail and the sun is going down and I don't have a flashlight",4.0
+"My toddler just swallowed a small battery and I don't know if I should drive to the ER or wait",4.0
+"There's a person lying face down on the sidewalk and they haven't moved in a long time",4.0
+"I just got a notification that someone is trying to log into my bank account from another country",4.0
+"My brakes completely failed while I was driving and I had to use the emergency brake to stop",4.0
+"Someone is following me through the mall and every time I turn around they hide",4.0
+"I think I’m having a severe allergic reaction because my face is starting to swell up",4.0
+"There is a large aggressive dog roaming the playground and kids are scared to leave the equipment",4.0
+"My elderly father has been gone for four hours and he has dementia and it's freezing outside",4.0
+"I can smell a very strong scent of natural gas in my kitchen and it's making me lightheaded",4.0
+"There is a group of people fighting in the middle of the street with bats and pipes",4.0
+"I just found a suicide note from my brother and I can't find him anywhere in the house",4.0
+"My water heater just burst and there is two inches of hot water covering my entire basement",4.0
+"Someone just snatched my phone out of my hand and ran into the subway station",4.0
+"I’ve been feeling extremely dizzy and my vision is starting to go blurry and dark",4.0
+"There is a power line that snapped and it's laying across my driveway sparking",4.0
+"I just witnessed a guy break a car window and grab a bag while the owner was in the store",4.0
+"My kitchen sink is backing up with black sludge and it's overflowing onto the floor",4.0
+"I’m having a massive panic attack and I feel like my heart is going to explode out of my chest",4.0
+"Someone is banging on my front door and demanding to be let in and I don't know who it is",4.0
+"I just saw a child wandering alone near the busy intersection with no adult in sight",4.0
+"There is a fire in the dumpster behind the building and the flames are reaching the second floor",4.0
+"My husband is slurring his speech and he can't seem to lift his right arm",4.0
+"I’m trapped in my bathroom because the door handle broke and I don't have my phone",4.0
+"There's a car driving the wrong way down the one-way street toward oncoming traffic",4.0
+"I just found my front door wide open and my house has been completely tossed",4.0
+"My leg is starting to swell up and turn purple after I got stung by something",4.0
+"Someone is sitting in a parked car outside my house just taking pictures of my windows",4.0
+"I can hear a baby crying uncontrollably in the apartment next door for over two hours",4.0
+"There is a large chemical spill on the road from a truck that just turned the corner",4.0
+"I’m feeling very suicidal and I don't think I can keep myself safe tonight",4.0
+"My car is overheating and there is steam pouring out from under the hood in the middle of traffic",4.0
+"I just saw a man pull a knife on someone at the bus stop",4.0
+"There is a tree that looks like it's about to fall onto the power lines in my backyard",4.0
+"I can't find my six-year-old at the crowded park and I've looked everywhere for ten minutes",4.0
+"My blood sugar is dangerously low and I'm starting to lose consciousness",4.0
+"Someone just threw a brick through my living room window and ran away",4.0
+"I’m stuck in the middle of the elevator between floors and the emergency phone isn't picking up",4.0
+"There's a strange man in my backyard looking through my sliding glass door",4.0
+"I just saw a hit and run where a car smashed into a parked vehicle and sped off",4.0
+"My carbon monoxide detector is going off and I'm starting to feel very sleepy",4.0
+"I’m having a really hard time breathing and my inhaler isn't doing anything",4.0
+"There is a huge sinkhole that just opened up in the middle of the street",4.0
+"I just saw someone get shoved into a van against their will",4.0
+"My apartment is starting to fill with water from the unit above me",4.0
+"Someone is trying to scam me into giving them my social security number over the phone",4.0
+"I can hear someone screaming for help from the woods behind my house",4.0
+"There's a car on the side of the road that is starting to smoke and catch fire",4.0
+"I just fell down the stairs and I think my ankle is definitely broken",4.0
+"My boss is threatening me and I feel very unsafe at my workplace right now",4.0
+"There is a suspicious backpack left sitting on the bench in the crowded train station",4.0
+"I’m having a severe allergic reaction to something I ate and my throat is tight",4.0
+"Someone just stole my car while my dog was still inside of it",4.0
+"I just saw a house fire start in the garage of the neighbor's home",4.0
+"My child is having a seizure and I don't know what to do to help them",4.0
+"There is a man walking down the street with a rifle over his shoulder",4.0
+"I’m trapped in my car after a crash and the doors won't open",4.0
+"I just found my friend passed out on the floor with an empty bottle of pills",4.0
+"Someone is breaking into the store across the street right now",4.0
+"I’m feeling very lightheaded and I keep nearly passing out",4.0
+"There is a massive tree limb that just crashed onto my roof",4.0
+"I just saw a woman being harassed by a group of men at the park",4.0
+"My kitchen is filling with smoke because the oven caught on fire",4.0
+"Someone is trying to pull my daughter away from me at the store",4.0
+"I’m having a very hard time staying awake after hitting my head",4.0
+"There is a car driving very erratically like the driver is intoxicated",4.0
+"I just found a strange person sleeping in my guest bedroom",4.0
+"My dog just bit me really hard and it won't stop bleeding",4.0
+"I’m feeling very overwhelmed and like I'm going to hurt myself",4.0
+"There is a gas leak in my neighborhood and the whole street smells like eggs",4.0
+"I just saw a teenager get hit by a car while crossing the street",4.0
+"My phone was snatched out of my hand while I was walking home",4.0
+"Someone is trying to break into my car while I'm sitting inside of it",4.0
+"I’m having a lot of chest pain and it's radiating down my left arm",4.0
+"There is a fire in the brush near the woods and it's spreading fast",4.0
+"I just saw someone fall off their balcony on the third floor",4.0
+"My son is missing and he was supposed to be home from school three hours ago",4.0
+"I’m trapped in the basement and the water is rising from the flood",4.0
+"Someone just threw something at my car while I was driving on the highway",4.0
+"I just found a man standing in my kitchen and I live alone",4.0
+"My child is choking on a piece of candy and I can't get it out",4.0
+"There is a shooter at the mall and everyone is running for the exits",4.0
+"I’m having a severe asthma attack and I can't find my medication",4.0
+"Someone is trying to kidnap my neighbor's kid in the driveway",4.0
+"I just saw a car fly off the bridge and into the river",4.0
+"My house is being broken into and I'm hiding in the closet",4.0
+"I’m bleeding very badly from a deep cut on my leg",4.0
+"There is a person with a gun in the lobby of my office building",4.0
+"I just saw a massive explosion at the warehouse downtown",4.0
+"My baby has stopped breathing and I'm starting CPR now",4.0
+"Someone is shooting at my house from the street outside",4.0
+"I’m in a really dark place and I don't think I can go on",4.0
+"I’m trying to stay calm but my heart is racing and I can’t stop shaking",5.0
+"There is a huge fight breaking out at the gas station and someone has a baseball bat",5.0
+"I just saw a car flip over on the highway and smoke is starting to come out of the engine",5.0
+"Please help my grandmother she fell down and she can't get up and her leg looks twisted",5.0
+"I can smell smoke in my hallway and the fire alarm is going off but I don't see flames yet",5.0
+"Someone is following me home and they just sped up when I started running",5.0
+"I've been vomiting for two days straight and now I feel like I'm going to pass out",5.0
+"My front door was kicked in while I was at the store and the house is a mess",5.0
+"There is a man standing in the middle of the street screaming at cars and waving a pipe",5.0
+"I think I’m having a reaction to my meds because my tongue feels thick and itchy",5.0
+"My car is stuck on the railroad tracks and I can hear a train whistle in the distance",5.0
+"Somebody just snatched my purse and shoved me to the ground",5.0
+"I’m trapped in the elevator and it just dropped a few feet and stopped again",5.0
+"There's a chemical smell in the building and everyone is starting to cough",5.0
+"I just found a suicide note from my roommate and their car is gone",5.0
+"My baby has a really high fever and their skin is starting to look blue around the mouth",5.0
+"I can hear someone breaking glass in the back of my house right now",5.0
+"There is a massive tree limb resting on a power line and it's starting to spark",5.0
+"I just witnessed a hit and run and the person on the bike is bleeding from their head",5.0
+"My husband is slurring his words and he doesn't know what year it is",5.0
+"I'm hiding in the bathroom because my boyfriend is throwing things and yelling",5.0
+"There is a brush fire near the fence of my backyard and the wind is picking up",5.0
+"I just saw a toddler wandering near the edge of the pond with no adult",5.0
+"My chest feels tight like an elephant is sitting on it and I'm sweating a lot",5.0
+"Someone just threw a brick through my car window while I was stopped at the light",5.0
+"I can see a person face down in the water near the pier",5.0
+"My carbon monoxide detector is wailing and I have a pounding headache",5.0
+"There's a guy in the park exposing himself to people passing by",5.0
+"I just got a frantic call from my daughter and then the line went dead",5.0
+"My kitchen is filling with thick white smoke from the dishwasher",5.0
+"I’ve been bitten by a snake and my leg is starting to swell up fast",5.0
+"Someone is trying to climb onto my balcony and I live on the third floor",5.0
+"I just saw a car drive off the road and into the ditch at high speed",5.0
+"My teenager hasn't come home and their phone location was last seen at a weird address",5.0
+"I'm having a severe asthma attack and my rescue inhaler is empty",5.0
+"There is a huge gas leak on the corner and you can hear the hissing sound",5.0
+"I just found my front door wide open and my dog is missing",5.0
+"I can hear someone crying for help from inside the locked public restroom",5.0
+"My vision just went blurry in one eye and my face feels numb",5.0
+"Someone is trying to break into the pharmacy across the street",5.0
+"I just saw a massive dog attack a person on the sidewalk",5.0
+"I’m trapped in the basement because the stairs collapsed during the flood",5.0
+"There is a suspicious package smoking in the trash can at the station",5.0
+"I think I’m being followed by the same car I saw yesterday",5.0
+"My wife is having a seizure and it’s been going on for over three minutes",5.0
+"I just saw a man pull a knife on a woman in the parking garage",5.0
+"There is a power line down in my yard and the grass is starting to burn",5.0
+"I'm lost in the woods and I can hear coyotes getting closer",5.0
+"My child is choking and I can't get the object out of their throat",5.0
+"I just found my son unconscious with an empty bottle of bleach",5.0
+"Someone is banging on my door saying they have a gun",5.0
+"I’m bleeding a lot from a cut and I can’t get it to stop with pressure",5.0
+"There is a car fire in the parking lot right next to other vehicles",5.0
+"I just saw someone get pushed into a black van",5.0
+"My house is flooding from a broken pipe and the water is near the outlets",5.0
+"I’m having thoughts of hurting myself and I have a plan ready",5.0
+"There is a shooter at my school please send help now",5.0
+"I just saw a car crash into a storefront and people are trapped",5.0
+"My blood sugar is 30 and I can't stay awake",5.0
+"Someone is trying to break into my bedroom window right now",5.0
+"I can see a house on fire two blocks away and the roof is collapsing",5.0
+"My boyfriend just hit me and I'm locked in the car",5.0
+"There is a person with a weapon in the lobby of the building",5.0
+"I just saw a kid fall out of a moving vehicle",5.0
+"My throat is closing up after I ate something with peanuts",5.0
+"Someone is shooting at my house from the street",5.0
+"I just saw a plane that looks like it's going down",5.0
+"My baby isn't breathing and her face is turning purple",5.0
+"I'm in a really bad place and I don't want to live anymore",5.0
+"There is a massive explosion at the chemical plant nearby",5.0
+"Help me I'm being chased by a man with a knife",5.0
+"I just saw a car hit a pedestrian and keep going",5.0
+"My house is filling with water and I can't get the door open",5.0
+"Someone is trying to kidnap my kid at the park",5.0
+"I'm having a heart attack please hurry",5.0
+"There is a shooter in the office hide everyone",5.0
+"I just saw a bridge collapse into the river",5.0
+"My arm was severed in a machinery accident",5.0
+"Someone is holding me at gunpoint in my own home",5.0
+"I'm losing too much blood I feel cold",5.0
+"There is a fire in the nursing home and people are trapped",5.0
+"I just saw a person jump off the roof",5.0
+"My husband is slumping over and he can't speak",5.0
+"Someone is trying to break into the bank",5.0
+"I'm being followed by a group of men and they look dangerous",5.0
+"There is a gas leak in the school and kids are dizzy",5.0
+"I just saw a car explode on the side of the road",5.0
+"My child is missing and we are near the busy highway",5.0
+"I'm trapped in a fire and I can't breathe",5.0
+"Someone is trying to kill me please help",5.0
+"I just saw a massive pileup on the freeway",5.0
+"My leg is crushed under a fallen tree",5.0
+"There is a person with a bomb in the mall",5.0
+"I just found my sister unresponsive on the floor",5.0
+"Someone is shooting a gun in the park",5.0
+"I'm having a severe allergic reaction and I'm alone",5.0
+"There is a fire in the woods behind my house",5.0
+"I just saw a car fly off the embankment",5.0
+"My baby is blue and not moving",5.0
+"I can't go on I'm at the edge of the roof",5.0
+"HELP! Someone just collapsed at the bus stop and they aren't waking up!",6.0
+"I can see fire coming out of the second-story window of that house!",6.0
+"My kitchen is filling with thick black smoke and I can't find the cat!",6.0
+"A man just pulled a knife on me and he's demanding my keys!",6.0
+"HE'S HITTING HER! My neighbor is attacking his wife in the driveway!",6.0
+"I just saw a car fly off the road and flip over into the ditch!",6.0
+"My baby is choking and turning blue, I don't know what to do!",6.0
+"There's a massive gas leak and I can hear the hissing from the street!",6.0
+"PLEASE HURRY my husband is having a seizure and it won't stop!",6.0
+"Someone just smashed my window and they are trying to climb inside!",6.0
+"I think I'm having a heart attack, my chest is tight and I'm dizzy!",6.0
+"There's a person face down in the water near the pier, they aren't moving!",6.0
+"A power line just snapped and it's sparking right on top of a car!",6.0
+"I just saw a hit and run, a guy on a bike got tossed into the air!",6.0
+"My carbon monoxide alarm is screaming and I feel like I'm going to vomit!",6.0
+"HE HAS A GUN! There is a man with a gun in the middle of the park!",6.0
+"I'm trapped in the elevator and it just dropped, I'm scared!",6.0
+"There is a huge chemical spill on the highway and the fumes are burning my eyes!",6.0
+"I found a suicide note and my brother's room is empty, I'm terrified!",6.0
+"My child just drank a whole bottle of cleaning fluid, please help!",6.0
+"The store is being robbed right now, I'm hiding in the back!",6.0
+"I can't breathe, my throat is closing up, I think it was the peanuts!",6.0
+"Someone is trying to snatch my kid away from me in the parking lot!",6.0
+"I just saw a plane go down behind the trees, there was a loud bang!",6.0
+"My wife is slurring her words and one side of her face is sagging!",6.0
+"THERE IS A SHOOTER! Get out of the building, everyone run!",6.0
+"I'm bleeding really bad from a deep cut and I can't get it to stop!",6.0
+"Someone just threw a brick through my windshield while I was driving!",6.0
+"There's a man following me and he's shouting that he's going to kill me!",6.0
+"The ceiling just collapsed in the apartment above me, water is everywhere!",6.0
+"My daughter didn't come home and a stranger is answering her phone!",6.0
+"I just saw a massive explosion at the gas station down the street!",6.0
+"HELP ME! I'm locked in the closet and I hear someone in my room!",6.0
+"A tree just fell on a car and someone is trapped inside!",6.0
+"My blood sugar is 25, I can't stand up, I'm going to pass out!",6.0
+"Someone is trying to break down my front door with a crowbar!",6.0
+"I can hear someone screaming for help from the burning house!",6.0
+"My boyfriend just hit me and he won't let me leave the house!",6.0
+"There's a suspicious bag smoking at the train station, everyone run!",6.0
+"I think I've been bitten by a rattlesnake, my leg is purple!",6.0
+"A man is standing on the ledge of the bridge, he looks like he's going to jump!",6.0
+"I just saw a toddler wandering alone near the high-speed traffic!",6.0
+"There is a person with a rifle walking toward the school entrance!",6.0
+"I'm trapped in the basement and the water is up to my waist!",6.0
+"Someone just got stabbed in the middle of the crowded mall!",6.0
+"My baby stopped breathing, please please tell me what to do!",6.0
+"There's a huge fire in the woods and the wind is blowing it toward the houses!",6.0
+"I just found my friend unconscious with an empty bottle of pills!",6.0
+"He's got a gun to his head, he's going to do it, help!",6.0
+"The floor is shaking and I hear a loud rumbling, I think it's an earthquake!",6.0
+"I'm losing so much blood I feel cold, please hurry!",6.0
+"Someone is trying to force me into their car, HELP!",6.0
+"There is a gas leak in the school and children are fainting!",6.0
+"I just saw a car crash into a crowd of people at the parade!",6.0
+"My house is on fire and I can't find my kids!",6.0
+"Someone is shooting a gun from a balcony at people below!",6.0
+"I've been shot! I think it was a drive-by!",6.0
+"My husband just collapsed and he's not breathing, he's turning blue!",6.0
+"There's a man with a knife chasing people in the subway station!",6.0
+"I'm trapped under a fallen building, I can't move my legs!",6.0
+"A massive explosion just rocked the neighborhood, glass is everywhere!",6.0
+"Help! My child is having a seizure and they're turning purple!",6.0
+"Someone is breaking into my bedroom window right now!",6.0
+"The brakes failed and we're heading toward the cliff!",6.0
+"I'm having a severe allergic reaction, my eyes are swollen shut!",6.0
+"There's a shooter in the lobby, everyone hide!",6.0
+"I just saw a car go off the bridge and sink into the water!",6.0
+"My baby is blue and limp, please help me!",6.0
+"I'm standing on the edge of the roof, I can't take it anymore!",6.0
+"Someone is trying to kidnap my neighbor's daughter!",6.0
+"I think I'm having a stroke, I can't move my left side!",6.0
+"There's a person with a bomb in the airport, call everyone!",6.0
+"I just saw a man get crushed by a falling shipping container!",6.0
+"Help, someone is trying to drown me!",6.0
+"My house is filling with gas and I can't get the windows open!",6.0
+"I saw a car hit a stroller and keep going!",6.0
+"My chest is crushing me, I can't catch a breath!",6.0
+"Someone is shooting through the front door of the store!",6.0
+"I'm trapped in a car fire, the doors are jammed!",6.0
+"My baby fell from the second floor balcony!",6.0
+"There is a shooter at the movie theater, everyone is screaming!",6.0
+"I've been bitten by a dog and it ripped my arm open!",6.0
+"I'm watching a man douse himself in gasoline!",6.0
+"The bridge just collapsed while I was driving over it!",6.0
+"My husband is slumping over and he's making a gurgling noise!",6.0
+"Someone is trying to break into the bank vault!",6.0
+"I'm being followed and they just pulled out a weapon!",6.0
+"There is a chemical leak at the plant, the siren is going off!",6.0
+"I just saw a car explode in the middle of traffic!",6.0
+"My child is missing and we're right by the lake!",6.0
+"I'm trapped in the burning room and the door is hot!",6.0
+"Someone is trying to kill me, I'm hiding under the bed!",6.0
+"I just saw a ten-car pileup on the freeway!",6.0
+"My leg is pinned under the tractor and I'm alone!",6.0
+"There is a person with a weapon in the hospital lobby!",6.0
+"I just found my daughter unresponsive and she's not breathing!",6.0
+"Someone is firing a gun in the middle of the street!",6.0
+"I'm having a massive heart attack, I know it!",6.0
+"There is a fire in the apartment and I can hear children inside!",6.0
+"I just saw a car fly off the cliff side!",6.0
+"My baby is unresponsive and her lips are blue!",6.0
+"I CAN'T BREATHE! Everything is getting dark, please help me!",7.0
+"HE'S IN THE HOUSE! I'm hiding under the bed and I hear him coming upstairs!",7.0
+"My baby isn't moving! She's blue, oh my god, she's not breathing!",7.0
+"THERE IS SO MUCH BLOOD! His leg is wide open, I can't stop it!",7.0
+"FIRE! The whole stairs are on fire and I'm trapped on the second floor!",7.0
+"HE HAS A GUN! He's pointing it at people, everyone is screaming and running!",7.0
+"My husband just collapsed, he's turning purple and making a gurgling sound!",7.0
+"I just saw a car fly off the bridge into the water, it's sinking fast!",7.0
+"SHE'S HAVING A STROKE! Half her face is drooping and she can't speak!",7.0
+"Someone just stabbed a man in the chest right in front of me!",7.0
+"I'm trapped in the car and it's starting to fill with water, the doors are stuck!",7.0
+"HE'S KILLING HER! Help, my neighbor is attacking her with a knife!",7.0
+"My child just drank a whole bottle of bleach, they are convulsing!",7.0
+"THERE'S A SHOOTER! I'm under a desk and I hear shots in the hallway!",7.0
+"I've been shot in the stomach! I'm losing so much blood, please!",7.0
+"The roof just collapsed and people are buried under the wood and glass!",7.0
+"HE'S TRYING TO JUMP! He's on the edge of the bridge, hurry!",7.0
+"My throat is closed shut! I can't swallow, I can't talk, HELP!",7.0
+"A man is trying to pull a girl into his van, she's screaming for help!",7.0
+"I'm losing consciousness, I think I'm having a massive heart attack!",7.0
+"The car is on fire and the driver is still inside, the doors won't open!",7.0
+"I found my sister and she's not breathing, there's a needle next to her!",7.0
+"HE'S SHOOTING! He's just shooting at everyone in the store!",7.0
+"I'm pinned under the car! I can't feel my legs, it's crushing me!",7.0
+"My baby fell in the pool! I just pulled him out but he's not breathing!",7.0
+"The gas line blew up! The whole house is gone, there's fire everywhere!",7.0
+"HE'S CHASING ME WITH AN AXE! PLEASE HELP ME!",7.0
+"I just saw a pedestrian get crushed by a bus, it's bad, it's really bad!",7.0
+"I think I'm dying, my chest is ripping apart, I can't see!",7.0
+"SOMEONE IS BREAKING INTO MY BEDROOM! I'm in the closet, hurry!",7.0
+"He's dousing the house in gasoline and he has a lighter!",7.0
+"My child is having a massive seizure and they've stopped breathing!",7.0
+"The elevator snapped! We're falling, oh my god, we're falling!",7.0
+"I'm bleeding out from my neck, I can't hold the pressure anymore!",7.0
+"HE'S RAPING HER! I can hear her screaming in the alleyway!",7.0
+"A massive explosion just leveled the building next door!",7.0
+"I just saw a man get hit by a train, please send everyone!",7.0
+"My throat is swollen shut from the bee sting, I'm suffocating!",7.0
+"HE'S POINTING THE GUN AT HIS HEAD! HE'S GOING TO KILL HIMSELF!",7.0
+"I'm trapped in the basement and the water is over my head!",7.0
+"Someone just threw acid in her face, she's screaming, her skin is peeling!",7.0
+"I saw a car hit a group of kids at the bus stop, they aren't moving!",7.0
+"My heart just stopped, I feel it, I'm going cold!",7.0
+"HE'S BREAKING THROUGH THE DOOR! HE HAS A HAMMER!",7.0
+"There is a person with a bomb in the subway, they have a vest on!",7.0
+"I'm paralyzed, I fell and I can't move anything below my neck!",7.0
+"The school is on fire and the kids are trapped in the gym!",7.0
+"HE'S STRANGLING HER! SHE'S TURNING BLUE!",7.0
+"I've been bitten by a cobra, my heart is slowing down, help!",7.0
+"I just found my baby face down in the crib and she's cold!",7.0
+"THE BRIDGE IS GONE! Cars are falling into the river!",7.0
+"HE'S SHOOTING THROUGH THE WINDOWS! GET DOWN!",7.0
+"I'm losing too much blood, I'm getting so sleepy, please hurry!",7.0
+"Someone is trying to push me off the balcony!",7.0
+"The factory exploded! There are chemicals everywhere and people can't breathe!",7.0
+"HE'S STABBING HIMSELF! THERE'S BLOOD EVERYWHERE!",7.0
+"I'm trapped in the walk-in freezer and the alarm isn't working!",7.0
+"My child is blue and limp, I'm doing CPR, please help!",7.0
+"THERE'S A MAN WITH A RIFLE ON THE ROOF!",7.0
+"I'm drowning! I'm in the car and it's under the water!",7.0
+"HE'S GOT A KNIFE TO MY THROAT! DON'T HANG UP!",7.0
+"I just saw a plane crash into the shopping center!",7.0
+"My husband is slumping, he's making a death rattle sound!",7.0
+"HE'S TRYING TO SET HIMSELF ON FIRE!",7.0
+"I'm being crushed! The wall fell on me!",7.0
+"Someone just snatched the baby out of the stroller and ran!",7.0
+"I'm having a massive stroke, I can't move my whole right side!",7.0
+"THERE IS A BOMB! GET OUT OF THE BUILDING!",7.0
+"HE'S KILLING EVERYONE! PLEASE, JUST SEND HELP!",7.0
+"I can't breathe, the smoke is too thick, I'm going to pass out!",7.0
+"My wife is hemorrhaging after birth, there's so much blood!",7.0
+"HE'S FIRING INTO THE CROWD!",7.0
+"I just saw a car explode with people inside!",7.0
+"My son is unresponsive, he took his father's heart medication!",7.0
+"I'm trapped in a collapsed building, I can hear people screaming!",7.0
+"HE'S COMING FOR ME! HE HAS A MACHETE!",7.0
+"I just saw a man jump from the 10th floor!",7.0
+"My baby is choking on a coin, her face is black!",7.0
+"THERE IS A ACTIVE SHOOTER IN THE HOSPITAL!",7.0
+"I'm bleeding from my femoral artery, it's spurting!",7.0
+"HE'S HOLDING US HOSTAGE! HE HAS AN EXPLOSIVE!",7.0
+"I'm in a car at the bottom of the lake, help me!",7.0
+"HE'S BEATING HIM TO DEATH WITH A BRICK!",7.0
+"I can't catch my breath, my lungs are filling with fluid!",7.0
+"THERE'S A PERSON WITH A SWORD ATTACKING PEOPLE!",7.0
+"I just found my brother, he's blue and not breathing, overdose!",7.0
+"HE'S TRYING TO THROW THE BABY OFF THE BALCONY!",7.0
+"I'm trapped in the machinery, it's tearing my arm off!",7.0
+"SOMEONE IS SHOOTING AT THE AMBULANCE!",7.0
+"My baby is blue, please, she's only two months old!",7.0
+"HE'S IN THE VENTILATION SYSTEM, I HEAR HIM!",7.0
+"I'm going to die, I know it, please tell my mom I love her!",7.0
+"HE'S STABBING PEOPLE AT THE TRAIN STATION!",7.0
+"I just saw a bus tip over, there are dozens of people hurt!",7.0
+"My throat is closed, I can't even hiss for air!",7.0
+"HE'S BURNING THE HOUSE DOWN WITH US INSIDE!",7.0
+"I'm having a massive internal bleed, I feel it!",7.0
+"THERE IS A GUNMAN IN THE LIBRARY!",7.0
+"I just saw a car hit a gas pump and it's a fireball!",7.0
+"My daughter is unresponsive and her pupils are tiny!",7.0
+"I'M DYING! I'M BLEEDING OUT! PLEASE GOD HELP ME!",8.0
+"HE'S SHOOTING! EVERYONE IS DOWN! BLOOD IS EVERYWHERE!",8.0
+"HE CUT MY THROAT! I'M HOLDING MY NECK! HURRY!",8.0
+"MY BABY IS BLUE! NO PULSE! I'M DOING CPR! HELP!",8.0
+"THE HOUSE EXPLODED! I'M TRAPPED IN THE FIRE! IT'S SO HOT!",8.0
+"HE'S STABBING HER! OVER AND OVER! STOP HIM!",8.0
+"I'VE BEEN SHOT! MY CHEST! I CAN'T BREATHE!",8.0
+"THE BRIDGE COLLAPSED! I'M IN THE RIVER! SINKING!",8.0
+"HE HAS A BOMB! HE'S IN THE BUILDING! RUN!",8.0
+"MY SON ISN'T BREATHING! HE'S LIMP! OH GOD NO!",8.0
+"I'M BEING STRETCHED! MY ARM IS CAUGHT IN THE MACHINE!",8.0
+"HE'S RAPING ME! HELP! PLEASE SOMEONE HELP!",8.0
+"BLOOD IS SPURTING! I CAN'T STOP IT! I'M GETTING DIZZY!",8.0
+"HE'S POURING GAS ON ME! HE HAS A MATCH!",8.0
+"THE ROOF IS FALLING! I'M BURIED! I CAN'T MOVE!",8.0
+"HE'S CHOKING ME! I CAN'T... BREATH... HELP...",8.0
+"MY DAUGHTER IS UNCONSCIOUS! SHE TOOK THE WHOLE BOTTLE!",8.0
+"HE'S FIRING INTO THE CAR! WE'RE TRAPPED!",8.0
+"I'M PARALYZED! I FELL AND I CAN'T FEEL ANYTHING!",8.0
+"THERE'S A SHOOTER IN THE LOBBY! HE'S KILLING PEOPLE!",8.0
+"MY HUSBAND JUST DROPPED! HE'S PURPLE! NO BREATH!",8.0
+"THE WATER IS OVER MY HEAD! I'M DROWNING!",8.0
+"HE HAS A MACHETE! HE'S HACKING AT THE DOOR!",8.0
+"MY THROAT IS SWOLLEN SHUT! I'M SUFFOCATING!",8.0
+"HE'S JUMPING! HE'S ON THE LEDGE! NO NO NO!",8.0
+"I'M HEMORRHAGING! SO MUCH BLOOD! I'M GOING COLD!",8.0
+"HE'S HOLDING A KNIFE TO THE BABY! HELP!",8.0
+"THE GAS LINE BLEW! FIRE IS EVERYWHERE!",8.0
+"I JUST SAW A MAN GET CRUSHED BY THE TRAIN!",8.0
+"HE'S STABBING HIMSELF! BLOOD IS SPRAYING!",8.0
+"I'M TRAPPED IN THE BURNING BEDROOM! HELP ME!",8.0
+"HE'S SHOOTING AT THE POLICE! HIDE!",8.0
+"MY BABY IS CHOKING! SHE'S BLACK IN THE FACE!",8.0
+"I'VE BEEN STABBED IN THE LUNG! I CAN'T TALK!",8.0
+"HE'S STRANGLING HER! SHE'S TURNING BLACK!",8.0
+"THE BUS FLIPPED! PEOPLE ARE CRUSHED! HURRY!",8.0
+"I'M IN THE TRUNK! HE KIDNAPPED ME! HELP!",8.0
+"HE'S KILLING EVERYONE IN THE OFFICE! PLEASE!",8.0
+"MY HEART STOPPED! I CAN FEEL IT! HELP!",8.0
+"HE'S BREAKING IN WITH AN AXE! I'M SCARED!",8.0
+"I'M BLEEDING FROM MY ARTERY! IT WON'T STOP!",8.0
+"HE'S SHOOTING INTO THE CROWD! RUN!",8.0
+"MY CHILD FELL FROM THE FOURTH FLOOR!",8.0
+"THE ELEVATOR CABLE SNAPPED! WE'RE FALLING!",8.0
+"HE'S DROWNING THE KIDS! GET HERE NOW!",8.0
+"I'M TRAPPED UNDER THE TRUCK! IT'S CRUSHING ME!",8.0
+"HE'S FIRING A RIFLE AT MY HOUSE!",8.0
+"MY WIFE IS UNRESPONSIVE! SHE'S NOT BREATHING!",8.0
+"THE FACTORY IS EXPLODING! CHEMICALS EVERYWHERE!",8.0
+"HE'S TRYING TO THROW ME OFF THE ROOF!",8.0
+"I'M SUFFOCATING! SMOKE IS EVERYWHERE!",8.0
+"HE'S STABBING PEOPLE ON THE SUBWAY!",8.0
+"MY BABY IS BLUE AND COLD! HELP ME!",8.0
+"I'M GOING TO DO IT! I'M AT THE EDGE!",8.0
+"HE'S SHOOTING THROUGH THE BEDROOM DOOR!",8.0
+"I'M TRAPPED IN THE BASEMENT! IT'S FLOODING!",8.0
+"HE'S ATTACKING US WITH A HAMMER!",8.0
+"I JUST SAW A MAN GET ELECTROCUTED! HE'S SMOKING!",8.0
+"HE'S TEARING HER APART! HELP HER!",8.0
+"I'M LOSING CONSCIOUSNESS! BLOOD EVERYWHERE!",8.0
+"HE'S GOT A BOMB! HE'S GOING TO BLOW IT!",8.0
+"MY SON IS BLUE! HE'S NOT MOVING!",8.0
+"I'M PINNED UNDER THE FALLEN WALL!",8.0
+"HE'S SHOOTING AT US! PLEASE HURRY!",8.0
+"MY THROAT IS COMPLETELY CLOSED! HELP!",8.0
+"HE'S BEATING HER WITH A PIPE! HURRY!",8.0
+"THE CAR IS UNDERWATER! I CAN'T GET OUT!",8.0
+"HE HAS A GUN TO MY HEAD!",8.0
+"I'M BLEEDING OUT! TELL MY KIDS I LOVE THEM!",8.0
+"HE'S KILLING PEOPLE AT THE MALL!",8.0
+"MY BABY IS CHOKING ON GLASS! HELP!",8.0
+"THE FIRE IS AT THE DOOR! I'M TRAPPED!",8.0
+"HE'S STABBING THE CLERK! BLOOD IS EVERYWHERE!",8.0
+"I'M PARALYZED FROM THE WAIST DOWN! HURRY!",8.0
+"HE'S THROWING ROCKS AT MY HEAD! I'M BLEEDING!",8.0
+"MY HUSBAND IS TURNING BLUE! CPR NOW!",8.0
+"THE BUILDING IS COLLAPSING! HELP!",8.0
+"HE'S SHOOTING INTO THE RESTAURANT!",8.0
+"I'M PINNED! THE TRACTOR FLIPPED!",8.0
+"HE HAS A MACHETE! HE'S KILLING PEOPLE!",8.0
+"MY BABY ISN'T BREATHING! SIDS! HELP!",8.0
+"THE WHOLE STREET IS ON FIRE!",8.0
+"HE'S STABBING HIM! PLEASE STOP HIM!",8.0
+"I'M LOSING TOO MUCH BLOOD! DARKNESS!",8.0
+"HE'S BREAKING IN! HE HAS A GUN!",8.0
+"MY CHILD IS UNRESPONSIVE! POISON!",8.0
+"I'M DROWNING IN THE POOL! HELP!",8.0
+"HE'S FIRING AT THE WINDOWS!",8.0
+"MY WIFE JUST COLLAPSED! NO PULSE!",8.0
+"THE ROOF IS GONE! EXPLOSION!",8.0
+"HE'S KILLING THE FAMILY! HURRY!",8.0
+"I'M ON FIRE! HELP ME!",8.0
+"HE'S STABBING ME! OH GOD!",8.0
+"MY BABY IS BLUE! HELP!",8.0
+"I'M DYING! SHOT!",8.0
+"HE'S SHOOTING! HELP!",8.0
+"FIRE! TRAPPED!",8.0
+"HE HAS A BOMB!",8.0
+"I'M BLEEDING OUT!",8.0
+"HELP ME!",8.0
+"MASS SHOOTING! THERE ARE BODIES EVERYWHERE! PLEASE HELP US!",9.0
+"THE ENTIRE BUILDING JUST COLLAPSED! HUNDREDS TRAPPED! HURRY!",9.0
+"MY WHOLE FAMILY IS GONE! THE GAS EXPLODED! HELP!",9.0
+"HE'S KILLING EVERYONE! I'M HIDING UNDER A DEAD BODY!",9.0
+"THE WATER IS OVER THE ROOF! WE ARE DROWNING! HELP!",9.0
+"HE SHOT THE DOCTOR! HE'S SHOOTING THE NURSES! RUN!",9.0
+"BOMB! THE ENTIRE STATION IS ON FIRE! PEOPLE ARE BURNING!",9.0
+"MY BABY IS COLD AND GRAY! I CAN'T FIND A PULSE! HELP!",9.0
+"HE'S HACKING PEOPLE WITH A MACHETE! BLOOD IS EVERYWHERE!",9.0
+"THE PLANE CRASHED INTO THE APARTMENT! EVERYTHING IS ON FIRE!",9.0
+"I'M BLEEDING FROM MY STOMACH AND MY NECK! I'M DYING!",9.0
+"HE'S STABBING THE CHILDREN! OH MY GOD STOP HIM!",9.0
+"THERE IS A SNIPER ON THE ROOF! PEOPLE ARE FALLING!",9.0
+"I JUST SAW A TRUCK PLOW THROUGH A HUNDRED PEOPLE!",9.0
+"MY HUSBAND'S HEAD IS BLEEDING OUT! HE'S NOT BREATHING!",9.0
+"THE BUS IS HANGING OFF THE CLIFF! IT'S FALLING!",9.0
+"HE'S SETTING PEOPLE ON FIRE! HELP US!",9.0
+"I'M TRAPPED IN THE RUBBLE! I CAN'T BREATHE! IT'S CRUSHING ME!",9.0
+"THERE ARE MULTIPLE SHOOTERS! THEY ARE IN THE CLASSROOM!",9.0
+"MY DAUGHTER IS BLUE! NO BREATH! NO HEARTBEAT! HELP!",9.0
+"HE'S CUTTING PEOPLE! HE HAS A SAW! HELP!",9.0
+"THE CHEMICAL TANK EXPLODED! EVERYONE IS FAINTING!",9.0
+"HE'S SHOOTING AT THE AMBULANCE! WE CAN'T GET OUT!",9.0
+"I'M LOSING TOO MUCH BLOOD! DARKNESS IS COMING!",9.0
+"HE'S KILLING THE PATIENTS! HELP! HELP!",9.0
+"THE BRIDGE SNAPPED! DOZENS OF CARS IN THE WATER!",9.0
+"HE HAS A VEST! HE'S GOING TO BLOW THE MALL UP!",9.0
+"MY SON IS GRAY! HE'S COLD! I'M DOING CPR! HURRY!",9.0
+"HE'S SHOOTING INTO THE CROWDED TRAIN!",9.0
+"THE WHOLE OFFICE IS GONE! EXPLOSION!",9.0
+"HE'S STABBING THE BABY! NO! NO! NO!",9.0
+"I'M DYING! I CAN'T FEEL MY HEART ANYMORE!",9.0
+"HE'S FIRING A MACHINE GUN AT THE CROWD!",9.0
+"MY WIFE IS DEAD! SHE'S NOT BREATHING! HELP!",9.0
+"THE SHIP IS SINKING! HUNDREDS IN THE WATER!",9.0
+"HE'S EXECUTING PEOPLE! HE'S LINING THEM UP!",9.0
+"I'M BURIED ALIVE! THE HOUSE COLLAPSED!",9.0
+"HE'S THROWING PEOPLE OFF THE BRIDGE!",9.0
+"MY BABY ISN'T BREATHING! LIPS ARE BLACK!",9.0
+"THE GAS MAIN BLEW! THE WHOLE BLOCK IS GONE!",9.0
+"HE'S SHOOTING FROM THE WINDOW! PEOPLE ARE DOWN!",9.0
+"I'M COVERED IN GASOLINE! HE HAS THE LIGHTER!",9.0
+"HE'S STABBING THE TEACHER! HELP!",9.0
+"THE CEILING FELL ON US! WE'RE TRAPPED!",9.0
+"HE'S SHOOTING AT THE COPS! FIRE EVERYWHERE!",9.0
+"MY BABY IS LIMP! SHE'S NOT MOVING! HELP!",9.0
+"HE HAS A GRENADE! HE'S GOING TO PULL THE PIN!",9.0
+"I'M DROWNING! THE CAR IS FULL OF WATER!",9.0
+"HE'S KILLING PEOPLE WITH A HAMMER!",9.0
+"MY HEART STOPPED! I'M DYING! HURRY!",9.0
+"HE'S SHOOTING INTO THE THEATER!",9.0
+"I'M BURIED IN THE LANDSLIDE! HELP!",9.0
+"HE'S STABBING THE PASSENGERS!",9.0
+"MY SON IS DEAD! HE'S BLUE!",9.0
+"THE ENTIRE STORE EXPLODED!",9.0
+"HE'S SHOOTING FROM THE ROOF!",9.0
+"I'M PARALYZED! I CAN'T BREATHE!",9.0
+"HE HAS A BOMB AT THE SCHOOL!",9.0
+"MY BABY IS UNRESPONSIVE! COLD!",9.0
+"THE FACTORY IS ON FIRE! CHEMICALS!",9.0
+"HE'S KILLING US! HIDE!",9.0
+"I'M LOSING TOO MUCH BLOOD! HELP!",9.0
+"HE'S SHOOTING INTO THE BUS!",9.0
+"MY WIFE IS DEAD! HELP!",9.0
+"THE DAM BROKE! THE WATER IS COMING!",9.0
+"HE HAS A GUN TO THE KID'S HEAD!",9.0
+"I'M DYING! SHOT IN THE HEAD!",9.0
+"HE'S KILLING EVERYONE!",9.0
+"MY BABY IS BLUE! HELP!",9.0
+"FIRE! EVERYWHERE! TRAPPED!",9.0
+"HE HAS A BOMB!",9.0
+"I'M DYING!",9.0
+"HE'S SHOOTING!",9.0
+"HELP! DYING!",9.0
+"BODIES EVERYWHERE!",9.0
+"HE'S KILLING US!",9.0
+"NO BREATH! NO PULSE!",9.0
+"HOUSE EXPLODED!",9.0
+"HE'S STABBING EVERYONE!",9.0
+"I'M ON FIRE!",9.0
+"HE HAS A GUN!",9.0
+"MY BABY IS BLUE!",9.0
+"I'M DYING! SHOT!",9.0
+"HE'S SHOOTING! HELP!",9.0
+"BOMB! RUN!",9.0
+"HELP! BLOOD!",9.0
+"HE'S KILLING HER!",9.0
+"NO BREATH! HELP!",9.0
+"STABBING! BLOOD!",9.0
+"I'M DYING! HELP!",9.0
+"HE'S SHOOTING!",9.0
+"FIRE! TRAPPED!",9.0
+"HELP US!",9.0
+"HE HAS A BOMB!",9.0
+"DYING!",9.0
+"SHOOTER!",9.0
+"BLOOD!",9.0
+"HELP!",9.0
+"DYING!",9.0
+"ACTIVE SHOOTER! HE'S EXECUTING PEOPLE! EVERYONE IS DEAD! HELP!",10.0
+"THE ENTIRE BUILDING JUST PULVERIZED! I'M BURIED! I CAN'T BREATHE!",10.0
+"HE'S CUTTING MY THROAT! BLOOD IS SPURTING! I'M DYING! GOD!",10.0
+"MY BABY IS COLD! NO HEARTBEAT! NO BREATH! SHE'S GRAY!",10.0
+"HE'S FIRING A MACHINE GUN INTO THE CROWD! BODIES ARE PILING UP!",10.0
+"THE PLANE CRASHED INTO THE BUILDING! IT'S A FIREBALL! HELP!",10.0
+"HE'S STABBING THE INFANTS! OH GOD PLEASE STOP THE MONSTER!",10.0
+"I'M DROWNING! THE WATER IS AT THE CEILING! NO AIR! NO AIR!",10.0
+"HE'S BLOWING THE MALL UP! HE HAS A VEST! RUN! RUN! RUN!",10.0
+"HE'S HACKING MY ARM OFF WITH A MACHETE! I'M LOSING TOO MUCH BLOOD!",10.0
+"THERE IS A SNIPER KILLING EVERYONE! I'M UNDER A DEAD BODY!",10.0
+"THE GAS MAIN EXPLODED! THE WHOLE BLOCK IS GONE! FIRE EVERYWHERE!",10.0
+"HE'S RAPING HER AND STABBING HER! SHE'S STOPPED SCREAMING!",10.0
+"I'M BEING CRUSHED BY THE TRAIN! MY LEGS ARE GONE! HELP!",10.0
+"HE'S SHOOTING THE CHILDREN! PLEASE GOD SEND THE POLICE!",10.0
+"I JUST SAW A TRUCK PLOW THROUGH THE PARADE! DOZENS DEAD!",10.0
+"HE'S DOWSING US IN GAS! HE'S STRIKING THE MATCH! HELP!",10.0
+"I'M PARALYZED AND THE HOUSE IS ON FIRE! I'M BURNING ALIVE!",10.0
+"HE'S SHOOTING INTO THE NURSERY! HE'S KILLING THE BABIES!",10.0
+"MY HEART STOPPED! EVERYTHING IS BLACK! I'M DYING!",10.0
+"HE HAS A NUCLEAR DEVICE! HE'S GOING TO DETONATE IT!",10.0
+"THE DAM BURST! A WALL OF WATER IS DESTROYING THE TOWN!",10.0
+"HE'S STABBING THE PILOT! THE PLANE IS GOING DOWN!",10.0
+"I'M BURIED IN THE LANDSLIDE! I CAN'T MOVE! NO OXYGEN!",10.0
+"HE'S FIRING INTO THE EMERGENCY ROOM! WE ARE TRAPPED!",10.0
+"MY SON'S HEAD IS GONE! THE CAR CRASHED! HELP ME!",10.0
+"HE'S EXECUTING HOSTAGES! ONE BY ONE! HURRY!",10.0
+"THE SHIP IS SINKING FAST! WE ARE TRAPPED IN THE HOLD!",10.0
+"HE'S STABBING THE TEACHER IN THE NECK! BLOOD IS EVERYWHERE!",10.0
+"I'M TRAPPED IN THE MACHINERY! IT'S TEARING ME APART!",10.0
+"HE'S SHOOTING AT THE SURGEONS! THE PATIENT IS DYING!",10.0
+"THERE IS A BOMB IN THE VENTILATION! GAS IS LEAKING!",10.0
+"HE'S THROWING BABIES OFF THE ROOF! STOP HIM!",10.0
+"I'M BLEEDING FROM MY ARTERY! IT'S A FOUNTAIN! HELP!",10.0
+"HE'S KILLING THE FAMILY! I'M THE ONLY ONE LEFT!",10.0
+"THE CHEMICAL PLANT EXPLODED! THE AIR IS POISON!",10.0
+"HE'S FIRING INTO THE BUS! EVERYONE IS HIT!",10.0
+"I'M BURNING! I'M ON FIRE! GOD HELP ME!",10.0
+"HE HAS A GUN TO MY HEAD! HE'S PULLING THE TRIGGER!",10.0
+"MASSACRE AT THE STATION! BODIES EVERYWHERE!",10.0
+"HE'S STABBING THE PREGNANT WOMAN! STOP HIM!",10.0
+"THE ELEVATOR CABLE SNAPPED! WE ARE FALLING TO OUR DEATH!",10.0
+"HE'S SHOOTING THROUGH THE CLOSET DOOR! I'M HIT!",10.0
+"I'M DROWNING IN THE TRUNK! THE CAR IS IN THE LAKE!",10.0
+"HE'S BEATING THE CHILD WITH A HAMMER! HURRY!",10.0
+"MY BABY IS BLUE AND LIMP! NO PULSE! HELP!",10.0
+"HE HAS A BOMB AT THE AIRPORT! RUN!",10.0
+"I'M LOSING TOO MUCH BLOOD! DARKNESS!",10.0
+"HE'S SHOOTING THE POLICE! IT'S A WAR ZONE!",10.0
+"THE BRIDGE IS GONE! CARS ARE FALLING!",10.0
+"HE'S STABBING THE CLERK! BLOOD IS SPRAYING!",10.0
+"I'M TRAPPED IN THE FIRE! THE ROOF IS FALLING!",10.0
+"HE'S FIRING INTO THE CROWDED SUBWAY!",10.0
+"MY WIFE IS DEAD! SHE'S NOT BREATHING! HELP!",10.0
+"HE'S KILLING US ALL! PLEASE SEND EVERYONE!",10.0
+"I'M PINNED UNDER THE SEMI! IT'S CRUSHING ME!",10.0
+"HE HAS A GRENADE! HE PULLED THE PIN!",10.0
+"MY SON IS GRAY! NO BREATH! HELP!",10.0
+"THE GAS MAIN BLEW! THE HOUSE IS GONE!",10.0
+"HE'S STABBING THE PASSENGERS! BLOOD EVERYWHERE!",10.0
+"I'M DYING! SHOT IN THE CHEST!",10.0
+"HE'S SHOOTING! HELP!",10.0
+"FIRE! TRAPPED!",10.0
+"BOMB! RUN!",10.0
+"HE'S KILLING HER!",10.0
+"NO BREATH! HELP!",10.0
+"STABBING! BLOOD!",10.0
+"I'M DYING! HELP!",10.0
+"HE'S SHOOTING!",10.0
+"FIRE! TRAPPED!",10.0
+"HELP US!",10.0
+"HE HAS A BOMB!",10.0
+"DYING!",10.0
+"SHOOTER!",10.0
+"BLOOD!",10.0
+"HELP!",10.0
+"DYING!",10.0
+"BLUE!",10.0
+"FIRE!",10.0
+"GUN!",10.0
+"DYING!",10.0
+"HELP!",10.0
+"GOD!",10.0
+"HELP!",10.0
+"DYING!",10.0
+"HELP!",10.0
+"GOD!",10.0
+"HELP!",10.0
+"HELP!",10.0
+"HELP!",10.0
+"DYING!",10.0
+"DYING!",10.0
+"DYING!",10.0
+"DEAD!",10.0
+"DEAD!",10.0
+"DEAD!",10.0
+"DEAD!",10.0
+"DEAD!",10.0

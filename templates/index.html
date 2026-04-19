@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Urgency Triage AI</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; padding: 50px; }
+        #micBtn { font-size: 50px; cursor: pointer; background: none; border: none; }
+        .recording { color: red; animation: pulse 1s infinite; }
+        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        #results { margin-top: 30px; border: 1px solid #ccc; padding: 20px; display: none; }
+    </style>
+</head>
+<body>
+    <h1>Emergency Triage AI</h1>
+    <button id="micBtn">🎤</button>
+    <p id="status">Click to start recording (Max 30s)</p>
+
+    <div id="results">
+        <p><strong>Transcribed:</strong> <span id="transcription"></span></p>
+        <p><strong>Urgency Score:</strong> <span id="score"></span></p>
+        <p><strong>Category:</strong> <span id="category"></span></p>
+    </div>
+
+    <script>
+        let mediaRecorder;
+        let audioChunks = [];
+        const micBtn = document.getElementById('micBtn');
+        const status = document.getElementById('status');
+
+        micBtn.onclick = async () => {
+            if (mediaRecorder && mediaRecorder.state === "recording") {
+                mediaRecorder.stop();
+                micBtn.classList.remove('recording');
+                status.innerText = "Processing...";
+            } else {
+                const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+                mediaRecorder = new MediaRecorder(stream);
+                audioChunks = [];
+
+                mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+                mediaRecorder.onstop = async () => {
+                    const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
+                    const formData = new FormData();
+                    formData.append('audio', audioBlob);
+
+                    const response = await fetch('/process_audio', { method: 'POST', body: formData });
+                    const data = await response.json();
+                    
+                    document.getElementById('results').style.display = 'block';
+                    document.getElementById('transcription').innerText = data.text;
+                    document.getElementById('score').innerText = data.score;
+                    document.getElementById('category').innerText = data.category;
+                    status.innerText = "Click to record again";
+                };
+
+                mediaRecorder.start();
+                micBtn.classList.add('recording');
+                status.innerText = "Recording... Click again to stop.";
+                
+                // Auto-stop after 30 seconds
+                setTimeout(() => {
+                    if (mediaRecorder.state === "recording") mediaRecorder.stop();
+                }, 30000);
+            }
+        };
+    </script>
+</body>
+</html>
