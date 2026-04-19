@@ -2,8 +2,7 @@ numpy==1.26.4
 pandas==2.2.2
 scipy==1.12.0
 scikit-learn==1.4.2
-
 flask==3.0.3
-
-#openai-whisper==20231117
-pickle-mixin==1.0.2
+openai-whisper==20250625
+torch==2.5.1
+tiktoken==0.12.0

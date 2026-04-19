@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Crisis Triage AI</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: sans-serif;
+            background: #f4f6f8;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+
+        h1 { font-size: 1.8rem; color: #1a1a2e; margin-bottom: 6px; }
+        .subtitle { color: #666; font-size: 0.95rem; margin-bottom: 40px; }
+
+        #micBtn {
+            font-size: 52px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        #micBtn:hover { transform: scale(1.1); }
+        #micBtn.recording { animation: pulse 1s infinite; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50%       { opacity: 0.4; }
+        }
+
+        #status { margin-top: 10px; color: #555; font-size: 0.9rem; min-height: 20px; }
+
+        .text-input-area {
+            margin-top: 30px;
+            display: flex;
+            gap: 8px;
+            width: 100%;
+            max-width: 560px;
+        }
+
+        #textInput {
+            flex: 1;
+            padding: 10px 14px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            outline: none;
+        }
+        #textInput:focus { border-color: #4a90e2; }
+
+        #submitText {
+            padding: 10px 18px;
+            background: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.95rem;
+        }
+        #submitText:hover { background: #357abd; }
+
+        #spinner {
+            display: none;
+            margin-top: 20px;
+            width: 32px;
+            height: 32px;
+            border: 3px solid #e0e0e0;
+            border-top-color: #4a90e2;
+            border-radius: 50%;
+            animation: spin 0.7s linear infinite;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        #results {
+            display: none;
+            margin-top: 30px;
+            width: 100%;
+            max-width: 560px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        #bandBar { height: 6px; width: 100%; transition: background 0.3s; }
+
+        .results-inner { padding: 24px; }
+
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.95rem;
+        }
+        .result-row:last-child { border-bottom: none; }
+
+        .result-label { color: #888; font-size: 0.85rem; text-transform: uppercase; }
+        .result-value { font-weight: 600; color: #1a1a2e; text-align: right; }
+
+        .score-meter {
+            width: 100%;
+            height: 8px;
+            background: #eee;
+            border-radius: 4px;
+            margin-top: 6px;
+        }
+        .score-fill {
+            height: 100%;
+            border-radius: 4px;
+            transition: width 0.5s ease, background 0.3s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Crisis Triage AI</h1>
+    <p class="subtitle">Speak or type to assess urgency level</p>
+
+    <button id="micBtn">🎤</button>
+    <p id="status">Click to start recording (max 30s)</p>
+
+    <div class="text-input-area">
+        <input type="text" id="textInput" placeholder="Or type a message and press Analyse…" />
+        <button id="submitText">Analyse</button>
+    </div>
+
+    <div id="spinner"></div>
+
+    <div id="results">
+        <div id="bandBar"></div>
+        <div class="results-inner">
+            <div class="result-row">
+                <span class="result-label">Transcription</span>
+                <span class="result-value" id="transcription"></span>
+            </div>
+            <div class="result-row">
+                <span class="result-label">Urgency Score</span>
+                <span class="result-value">
+                    <span id="scoreText"></span> / 10
+                    <div class="score-meter">
+                        <div class="score-fill" id="scoreFill"></div>
+                    </div>
+                </span>
+            </div>
+            <div class="result-row">
+                <span class="result-label">Band</span>
+                <span class="result-value" id="bandBadge"></span>
+            </div>
+            <div class="result-row">
+                <span class="result-label">Route</span>
+                <span class="result-value" id="routeBadge"></span>
+            </div>
+            <div class="result-row">
+                <span class="result-label">Confidence</span>
+                <span class="result-value" id="confidence"></span>
+            </div>
+            <div class="result-row">
+                <span class="result-label">Method</span>
+                <span class="result-value" id="method"></span>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const $ = id => document.getElementById(id);
+
+        function scoreColor(score) {
+            if (score >= 8) return '#f44336';
+            if (score >= 4) return '#ff9800';
+            return '#4caf50';
+        }
+
+        function setLoading(on) {
+            $('spinner').style.display = on ? 'block' : 'none';
+            if (on) $('results').style.display = 'none';
+        }
+
+        function renderResult(data) {
+            $('results').style.display = 'block';
+            $('transcription').innerText = data.text;
+            $('scoreText').innerText = data.score.toFixed(2);
+            $('scoreFill').style.width = ((data.score - 1) / 9 * 100).toFixed(1) + '%';
+            $('scoreFill').style.background = scoreColor(data.score);
+            $('bandBar').style.background = scoreColor(data.score);
+            $('bandBadge').innerText = data.band;
+            $('routeBadge').innerText = data.route.replace(/_/g, ' ');
+            $('confidence').innerText = (data.confidence * 100).toFixed(1) + '%';
+            $('method').innerText = data.method;
+        }
+
+        async function handleResponse(res, fallbackStatus) {
+            const data = await res.json();
+            setLoading(false);
+            if (data.error) { $('status').innerText = data.error; return; }
+            renderResult(data);
+            if (fallbackStatus) $('status').innerText = fallbackStatus;
+        }
+
+        // — Mic recording —
+        let mediaRecorder, audioChunks, stream;
+
+        $('micBtn').onclick = async () => {
+            if (mediaRecorder?.state === 'recording') {
+                mediaRecorder.stop();
+                $('micBtn').classList.remove('recording');
+                $('status').innerText = 'Processing…';
+                return;
+            }
+
+            stream      = await navigator.mediaDevices.getUserMedia({ audio: true });
+            mediaRecorder = new MediaRecorder(stream);
+            audioChunks = [];
+
+            mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+
+            mediaRecorder.onstop = async () => {
+                stream.getTracks().forEach(t => t.stop());
+                setLoading(true);
+
+                const formData = new FormData();
+                formData.append('audio', new Blob(audioChunks, { type: 'audio/webm' }), 'audio.webm');
+
+                try {
+                    const res = await fetch('/process_audio', { method: 'POST', body: formData });
+                    await handleResponse(res, 'Click to record again');
+                } catch {
+                    setLoading(false);
+                    $('status').innerText = 'Request failed. Try again.';
+                }
+            };
+
+            mediaRecorder.start();
+            $('micBtn').classList.add('recording');
+            $('status').innerText = 'Recording… Click again to stop.';
+            setTimeout(() => { if (mediaRecorder.state === 'recording') mediaRecorder.stop(); }, 30000);
+        };
+
+        // — Text input —
+        async function submitText() {
+            const text = $('textInput').value.trim();
+            if (!text) return;
+            setLoading(true);
+
+            try {
+                const res = await fetch('/process_text', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ text })
+                });
+                await handleResponse(res, null);
+            } catch {
+                setLoading(false);
+                $('status').innerText = 'Request failed. Try again.';
+            }
+        }
+
+        $('submitText').onclick = submitText;
+        $('textInput').addEventListener('keydown', e => { if (e.key === 'Enter') submitText(); });
+    </script>
+</body>
+</html>

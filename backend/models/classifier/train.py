@@ -7,14 +7,17 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
     accuracy_score, mean_absolute_error, mean_squared_error, r2_score,
-    confusion_matrix, classification_report
+    confusion_matrix, classification_report, make_scorer, recall_score
 )
 
 BASE_DIR = Path(__file__).resolve().parents[3]
+OUT_DIR  = Path(__file__).resolve().parent
+
 csv_path = BASE_DIR / "datasets" / "text_samples" / "sample_text.csv"
 df = pd.read_csv(csv_path)
-df["text"] = df["text"].str.lower()
+df["text"]  = df["text"].str.lower()
 df["label"] = df["label"].astype(float)
+
 
 # ── Band assignment ───────────────────────────────────────────────────────────
 def assign_band(score):
@@ -31,6 +34,7 @@ print(df["label"].value_counts().sort_index())
 print("\nBand distribution:")
 print(df["band"].value_counts())
 
+
 # ── Train/test split ──────────────────────────────────────────────────────────
 X_train, X_test, y_train, y_test = train_test_split(
     df["text"], df[["label", "band"]],
@@ -43,16 +47,17 @@ y_test_label  = y_test["label"]
 y_train_band  = y_train["band"]
 y_test_band   = y_test["band"]
 
+
 # ── Shared TF-IDF vectorizer ──────────────────────────────────────────────────
-vectorizer = TfidfVectorizer(ngram_range=(1, 2), min_df=1, max_df=0.95, sublinear_tf=True)
+vectorizer  = TfidfVectorizer(ngram_range=(1, 2), min_df=1, max_df=0.95, sublinear_tf=True)
 X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec  = vectorizer.transform(X_test)
+
 
 # ── Stage 1: coarse band classifier ──────────────────────────────────────────
 stage1 = LogisticRegression(max_iter=2000, C=5.0)
 stage1.fit(X_train_vec, y_train_band)
 
-# ── Cross-validation on Stage 1 (macro recall — treats all bands equally) ────
 print(f"\n── Stage 1 cross-validation (5-fold, stratified) ──")
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
@@ -60,23 +65,18 @@ for metric, scoring in [("accuracy", "accuracy"), ("macro recall", "recall_macro
     scores = cross_val_score(stage1, X_train_vec, y_train_band, cv=cv, scoring=scoring)
     print(f"  {metric:>14}: {scores.mean():.4f} ± {scores.std():.4f}")
 
-# HIGH-specific recall via cross-validation
-from sklearn.metrics import make_scorer, recall_score
-high_recall_scorer = make_scorer(recall_score, labels=["HIGH"], average=None)
-# average=None returns per-class; wrap it to return only HIGH
 def high_recall(y_true, y_pred):
     classes = ["LOW", "MEDIUM", "HIGH"]
     scores  = recall_score(y_true, y_pred, labels=classes, average=None, zero_division=0)
-    return scores[2]  # index 2 = HIGH
+    return scores[2]
 
-high_scorer = make_scorer(high_recall)
-high_cv = cross_val_score(stage1, X_train_vec, y_train_band, cv=cv, scoring=high_scorer)
+high_cv = cross_val_score(stage1, X_train_vec, y_train_band, cv=cv, scoring=make_scorer(high_recall))
 print(f"  {'HIGH recall':>14}: {high_cv.mean():.4f} ± {high_cv.std():.4f}  ← most important")
 
-# ── Threshold calibration: lower P(HIGH) threshold to bias toward recall ─────
-# Sweep candidate thresholds and pick the one that keeps FNR=0 with lowest FPR.
+
+# ── Threshold calibration ─────────────────────────────────────────────────────
 HIGH_IDX = list(stage1.classes_).index("HIGH")
-s1_proba  = stage1.predict_proba(X_test_vec)
+s1_proba = stage1.predict_proba(X_test_vec)
 
 print(f"\n── Threshold sweep for HIGH (test set) ──")
 print(f"  {'Threshold':>10}  {'HIGH FNR':>10}  {'HIGH FPR':>10}  {'Accuracy':>10}")
@@ -94,14 +94,14 @@ for thresh in np.arange(0.20, 0.55, 0.05):
             preds.append(stage1.classes_[np.argmax(probs)])
     preds = np.array(preds)
 
-    cm_t  = confusion_matrix(y_test_band, preds, labels=bands)
-    tp    = cm_t[2, 2]
-    fn    = cm_t[2, :].sum() - tp
-    fp    = cm_t[:, 2].sum() - tp
-    tn    = cm_t.sum() - tp - fn - fp
-    fnr   = fn / (fn + tp) if (fn + tp) > 0 else 0.0
-    fpr   = fp / (fp + tn) if (fp + tn) > 0 else 0.0
-    acc   = accuracy_score(y_test_band, preds)
+    cm_t = confusion_matrix(y_test_band, preds, labels=bands)
+    tp   = cm_t[2, 2]
+    fn   = cm_t[2, :].sum() - tp
+    fp   = cm_t[:, 2].sum() - tp
+    tn   = cm_t.sum() - tp - fn - fp
+    fnr  = fn / (fn + tp) if (fn + tp) > 0 else 0.0
+    fpr  = fp / (fp + tn) if (fp + tn) > 0 else 0.0
+    acc  = accuracy_score(y_test_band, preds)
     print(f"  {thresh:>10.2f}  {fnr:>10.4f}  {fpr:>10.4f}  {acc:>10.4f}")
 
     if fnr == 0.0 and fpr < best_fpr:
@@ -110,7 +110,7 @@ for thresh in np.arange(0.20, 0.55, 0.05):
 
 print(f"\n  → Selected threshold: {best_thresh:.2f} (FNR=0 with lowest FPR)")
 
-# Apply selected threshold to produce final Stage 1 predictions
+
 def apply_threshold(proba, threshold, high_idx, classes):
     preds = []
     for probs in proba:
@@ -122,17 +122,16 @@ def apply_threshold(proba, threshold, high_idx, classes):
 
 s1_preds = apply_threshold(s1_proba, best_thresh, HIGH_IDX, stage1.classes_)
 
-s1_acc = accuracy_score(y_test_band, s1_preds)
 print(f"\n── Stage 1 (band classifier, threshold={best_thresh:.2f}) ──")
-print(f"Accuracy: {s1_acc:.4f}")
+print(f"Accuracy: {accuracy_score(y_test_band, s1_preds):.4f}")
 
 print("\nPer-band FNR / FPR (Stage 1):")
 cm = confusion_matrix(y_test_band, s1_preds, labels=bands)
 for i, band in enumerate(bands):
-    tp = cm[i, i]
-    fn = cm[i, :].sum() - tp
-    fp = cm[:, i].sum() - tp
-    tn = cm.sum() - tp - fn - fp
+    tp  = cm[i, i]
+    fn  = cm[i, :].sum() - tp
+    fp  = cm[:, i].sum() - tp
+    tn  = cm.sum() - tp - fn - fp
     fnr = fn / (fn + tp) if (fn + tp) > 0 else 0.0
     fpr = fp / (fp + tn) if (fp + tn) > 0 else 0.0
     print(f"  {band:6s}  FNR={fnr:.4f} (missed real {band})   FPR={fpr:.4f} (false alarm as {band})")
@@ -140,8 +139,9 @@ for i, band in enumerate(bands):
 print("\nFull classification report (Stage 1):")
 print(classification_report(y_test_band, s1_preds, labels=bands, digits=4))
 
+
 # ── Stage 2: one fine-grained classifier per band ────────────────────────────
-BAND_RANGES = {"LOW": (1, 3), "MEDIUM": (4, 7), "HIGH": (8, 10)}
+BAND_RANGES   = {"LOW": (1, 3), "MEDIUM": (4, 7), "HIGH": (8, 10)}
 stage2_models = {}
 
 print(f"── Stage 2 (per-band refiners) ──")
@@ -158,8 +158,7 @@ for band, (lo, hi) in BAND_RANGES.items():
         print(f"  {band}: no training samples — skipping")
         continue
 
-    n_classes = len(yb_train.unique())
-    if n_classes < 2:
+    if len(yb_train.unique()) < 2:
         majority = int(yb_train.mode()[0])
         stage2_models[band] = ("constant", majority)
         print(f"  {band}: only 1 class ({majority}) — constant predictor")
@@ -171,23 +170,22 @@ for band, (lo, hi) in BAND_RANGES.items():
 
     if Xb_test.shape[0] > 0:
         preds = m.predict(Xb_test)
-        acc   = accuracy_score(yb_test, preds)
-        mae   = mean_absolute_error(yb_test, preds)
+        n     = len(preds)
         under = int(np.sum(preds < yb_test))
         over  = int(np.sum(preds > yb_test))
-        n     = len(preds)
-        print(f"  {band}: accuracy={acc:.4f}  MAE={mae:.4f}  "
+        print(f"  {band}: accuracy={accuracy_score(yb_test, preds):.4f}  "
+              f"MAE={mean_absolute_error(yb_test, preds):.4f}  "
               f"under={under}/{n} ({under/n:.2%})  over={over}/{n} ({over/n:.2%})  "
               f"(n_test={n})")
     else:
         print(f"  {band}: no test samples for evaluation")
 
+
 # ── Full-system evaluation ────────────────────────────────────────────────────
 def pipeline_predict_score(vec, band_pred):
     entry = stage2_models.get(band_pred)
     if entry is None:
-        mid = {"LOW": 2.0, "MEDIUM": 5.5, "HIGH": 9.0}
-        return mid[band_pred]
+        return {"LOW": 2.0, "MEDIUM": 5.5, "HIGH": 9.0}[band_pred]
     kind, payload = entry
     if kind == "constant":
         return float(payload)
@@ -195,21 +193,16 @@ def pipeline_predict_score(vec, band_pred):
     classes = payload.classes_
     return float(np.dot(probs, classes.astype(float)))
 
-system_preds = []
-for i in range(X_test_vec.shape[0]):
-    score = pipeline_predict_score(X_test_vec[i], s1_preds[i])
-    system_preds.append(np.clip(score, 1, 10))
-
-system_preds  = np.array(system_preds)
-y_true_arr    = np.array(y_test_label)
-mae  = mean_absolute_error(y_true_arr, system_preds)
-rmse = np.sqrt(mean_squared_error(y_true_arr, system_preds))
-r2   = r2_score(y_true_arr, system_preds)
+system_preds = np.array([
+    np.clip(pipeline_predict_score(X_test_vec[i], s1_preds[i]), 1, 10)
+    for i in range(X_test_vec.shape[0])
+])
+y_true_arr = np.array(y_test_label)
 
 print(f"\n── Full system (end-to-end regression, 1–10) ──")
-print(f"MAE:  {mae:.4f}")
-print(f"RMSE: {rmse:.4f}")
-print(f"R²:   {r2:.4f}")
+print(f"MAE:  {mean_absolute_error(y_true_arr, system_preds):.4f}")
+print(f"RMSE: {np.sqrt(mean_squared_error(y_true_arr, system_preds)):.4f}")
+print(f"R²:   {r2_score(y_true_arr, system_preds):.4f}")
 
 actual_high = (y_true_arr >= 8)
 pred_high   = (system_preds >= 8)
@@ -232,7 +225,7 @@ print(f"  Precision: {prec:.4f}")
 print("\nSample predictions (pred | actual | band | correct_band):")
 for i in range(min(8, len(system_preds))):
     correct_band = assign_band(y_test_label.iloc[i])
-    mismatch = " ← BAND MISMATCH" if s1_preds[i] != correct_band else ""
+    mismatch     = " ← BAND MISMATCH" if s1_preds[i] != correct_band else ""
     print(f"  pred={system_preds[i]:.2f}  actual={y_test_label.iloc[i]:.0f}  "
           f"pred_band={s1_preds[i]}  correct_band={correct_band}{mismatch}")
 
@@ -248,11 +241,12 @@ for i, b in enumerate(bands):
     print()
 
 mask_med_test = np.array([assign_band(v) for v in y_test_label]) == "MEDIUM"
-med_actual = y_test_label[mask_med_test].values
-med_pred   = system_preds[mask_med_test]
-under_mask = med_pred < med_actual
+med_actual    = y_test_label[mask_med_test].values
+med_pred      = system_preds[mask_med_test]
+under_mask    = med_pred < med_actual
 DELTA_THRESHOLD = 0.5
 meaningful = under_mask & ((med_actual - med_pred) >= DELTA_THRESHOLD)
+
 print(f"\n── MEDIUM under-triage detail (delta ≥ {DELTA_THRESHOLD}, predicted < actual) ──")
 if meaningful.sum() == 0:
     print("  None — all misses within acceptable margin")
@@ -264,11 +258,14 @@ else:
         print(f"  actual={a:.0f}  pred={p:.2f}  delta={a-p:.2f}")
 print(f"  ({int(meaningful.sum())} significant misses out of {int(under_mask.sum())} total under-predictions)")
 
+
 # ── Persist artifacts ─────────────────────────────────────────────────────────
-pickle.dump(vectorizer,                   open("vectorizer.pkl",      "wb"))
-pickle.dump(stage1,                       open("stage1_model.pkl",    "wb"))
-pickle.dump(stage2_models,                open("stage2_models.pkl",   "wb"))
+pickle.dump(vectorizer,    open(OUT_DIR / "vectorizer.pkl",    "wb"))
+pickle.dump(stage1,        open(OUT_DIR / "stage1_model.pkl",  "wb"))
+pickle.dump(stage2_models, open(OUT_DIR / "stage2_models.pkl", "wb"))
 pickle.dump({"high_threshold": best_thresh,
-             "high_idx":       HIGH_IDX},  open("thresholds.pkl",      "wb"))
+             "high_idx":       HIGH_IDX},
+                           open(OUT_DIR / "thresholds.pkl",    "wb"))
 
 print("\nSaved: vectorizer.pkl, stage1_model.pkl, stage2_models.pkl, thresholds.pkl")
+print(f"Output directory: {OUT_DIR}")

@@ -1,10 +1,13 @@
 import pickle
 import numpy as np
+from pathlib import Path
 
-vectorizer    = pickle.load(open("vectorizer.pkl",    "rb"))
-stage1        = pickle.load(open("stage1_model.pkl",  "rb"))
-stage2_models = pickle.load(open("stage2_models.pkl", "rb"))
-thresholds    = pickle.load(open("thresholds.pkl",    "rb"))
+_DIR = Path(__file__).resolve().parent
+
+vectorizer    = pickle.load(open(_DIR / "vectorizer.pkl",    "rb"))
+stage1        = pickle.load(open(_DIR / "stage1_model.pkl",  "rb"))
+stage2_models = pickle.load(open(_DIR / "stage2_models.pkl", "rb"))
+thresholds    = pickle.load(open(_DIR / "thresholds.pkl",    "rb"))
 
 HIGH_THRESHOLD = thresholds["high_threshold"]
 HIGH_IDX       = thresholds["high_idx"]
@@ -49,9 +52,8 @@ def route_level(score):
     return "LOW_PRIORITY"
 
 
-# ── ML explainability (works with LogisticRegression) ─────────────────────────
+# ── ML explainability (works with LogisticRegression) ────────────────────────
 def explain_stage1(vec, pred_band, top_k=5):
-    """Return the top TF-IDF features driving the Stage-1 band prediction."""
     probs      = stage1.predict_proba(vec)[0]
     classes    = stage1.classes_
     pred_idx   = list(classes).index(pred_band)
@@ -75,10 +77,6 @@ def explain_stage1(vec, pred_band, top_k=5):
 
 # ── Score refinement via Stage 2 ─────────────────────────────────────────────
 def refine_score(vec, band):
-    """
-    Given a Stage-1 band, run the band-specific Stage-2 model and return a
-    probability-weighted expected score on the 1–10 scale.
-    """
     entry = stage2_models.get(band)
     band_midpoints = {"LOW": 2.0, "MEDIUM": 5.5, "HIGH": 9.0}
 
@@ -90,10 +88,9 @@ def refine_score(vec, band):
     if kind == "constant":
         return float(payload), None
 
-    # kind == "model"
     probs   = payload.predict_proba(vec)[0]
     classes = payload.classes_.astype(float)
-    score   = float(np.dot(probs, classes))     # expected value
+    score   = float(np.dot(probs, classes))
 
     score_probs = {
         int(cls): round(float(p), 3)
@@ -109,14 +106,14 @@ def predict(text):
     # Hard safety override — bypass ML entirely
     if kw_score >= 0.95:
         return {
-            "score":      10.0,
-            "band":       "HIGH",
-            "route":      "IMMEDIATE_ESCALATION",
-            "confidence": 1.0,
-            "triggered_by":    kw_matches,
+            "score":              10.0,
+            "band":               "HIGH",
+            "route":              "IMMEDIATE_ESCALATION",
+            "confidence":         1.0,
+            "triggered_by":       kw_matches,
             "stage1_explanation": None,
             "stage2_score_probs": None,
-            "method":     "keyword_override",
+            "method":             "keyword_override",
         }
 
     vec = vectorizer.transform([text.lower()])
@@ -127,20 +124,23 @@ def predict(text):
         band = "HIGH"
     else:
         band = stage1.classes_[int(np.argmax(s1_proba))]
-    s1_conf  = float(s1_proba[HIGH_IDX]) if band == "HIGH" else float(np.max(s1_proba))
+    s1_conf = float(s1_proba[HIGH_IDX]) if band == "HIGH" else float(np.max(s1_proba))
 
-    # Explainability (run after band is determined)
-    s1_expl = explain_stage1(vec, band)
+    # Stage 2: refine score within band
+    raw_score, s2_probs = refine_score(vec, band)
 
     # Keyword signal can only raise the score, never lower it
     score = max(raw_score, kw_score * 10.0)
     score = float(np.clip(score, 1.0, 10.0))
 
+    # Explainability
+    s1_expl = explain_stage1(vec, band)
+
     return {
-        "score":      round(score, 2),
-        "band":       band,
-        "route":      route_level(score),
-        "confidence": round(s1_conf, 3),
+        "score":              round(score, 2),
+        "band":               band,
+        "route":              route_level(score),
+        "confidence":         round(s1_conf, 3),
         "triggered_by":       kw_matches if kw_matches else None,
         "stage1_explanation": s1_expl,
         "stage2_score_probs": s2_probs,
