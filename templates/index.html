@@ -1,66 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Urgency Triage AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crisis Hotline Triage</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; }
-        #micBtn { font-size: 50px; cursor: pointer; background: none; border: none; }
-        .recording { color: red; animation: pulse 1s infinite; }
-        @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
-        #results { margin-top: 30px; border: 1px solid #ccc; padding: 20px; display: none; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .mic-section {
+            margin: 40px 0;
+        }
+
+        #micBtn {
+            font-size: 80px;
+            background: none;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+            padding: 0;
+        }
+
+        #micBtn:hover:not(.recording) {
+            transform: scale(1.1);
+        }
+
+        #micBtn.recording {
+            animation: pulse 1s infinite;
+            color: #e74c3c;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+        }
+
+        #status {
+            color: #666;
+            font-size: 14px;
+            margin-top: 15px;
+            min-height: 20px;
+        }
+
+        #results {
+            margin-top: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            display: none;
+            text-align: left;
+        }
+
+        #results.show {
+            display: block;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .result-item {
+            margin-bottom: 15px;
+        }
+
+        .result-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .result-label {
+            font-weight: 600;
+            color: #333;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #667eea;
+        }
+
+        .result-value {
+            font-size: 16px;
+            color: #333;
+            margin-top: 5px;
+            word-break: break-word;
+        }
+
+        .score-display {
+            font-size: 24px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .category-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 5px;
+        }
+
+        .category-low {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .category-medium {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .category-high {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-size: 14px;
+            padding: 12px;
+            background: #fadbd8;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
-    <h1>Emergency Triage AI</h1>
-    <button id="micBtn">🎤</button>
-    <p id="status">Click to start recording (Max 30s)</p>
+    <div class="container">
+        <h1>🚨 Crisis Triage AI</h1>
+        <p class="subtitle">Rapid assessment system for emergency situations</p>
 
-    <div id="results">
-        <p><strong>Transcribed:</strong> <span id="transcription"></span></p>
-        <p><strong>Urgency Score:</strong> <span id="score"></span></p>
-        <p><strong>Category:</strong> <span id="category"></span></p>
+        <div class="mic-section">
+            <button id="micBtn">🎤</button>
+            <p id="status">Click to start recording</p>
+        </div>
+
+        <div id="results">
+            <div class="result-item">
+                <div class="result-label">Transcription</div>
+                <div class="result-value" id="transcription"></div>
+            </div>
+            <div class="result-item">
+                <div class="result-label">Urgency Score</div>
+                <div class="score-display" id="score"></div>
+            </div>
+            <div class="result-item">
+                <div class="result-label">Category</div>
+                <div id="category"></div>
+            </div>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
     </div>
 
     <script>
         let mediaRecorder;
         let audioChunks = [];
+        let recordingTimeout;
         const micBtn = document.getElementById('micBtn');
         const status = document.getElementById('status');
+        const resultsDiv = document.getElementById('results');
+        const errorDiv = document.getElementById('error');
 
         micBtn.onclick = async () => {
             if (mediaRecorder && mediaRecorder.state === "recording") {
+                clearTimeout(recordingTimeout);
                 mediaRecorder.stop();
                 micBtn.classList.remove('recording');
                 status.innerText = "Processing...";
-            } else {
+                errorDiv.style.display = 'none';
+                return;
+            }
+
+            try {
                 const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
                 mediaRecorder = new MediaRecorder(stream);
                 audioChunks = [];
 
                 mediaRecorder.ondataavailable = e => audioChunks.push(e.data);
+
                 mediaRecorder.onstop = async () => {
+                    micBtn.classList.remove('recording');
+                    status.innerText = "Uploading...";
+
                     const audioBlob = new Blob(audioChunks, { type: 'audio/wav' });
                     const formData = new FormData();
-                    formData.append('audio', audioBlob);
+                    formData.append('audio', audioBlob, 'recording.wav');
 
-                    const response = await fetch('/process_audio', { method: 'POST', body: formData });
-                    const data = await response.json();
-                    
-                    document.getElementById('results').style.display = 'block';
-                    document.getElementById('transcription').innerText = data.text;
-                    document.getElementById('score').innerText = data.score;
-                    document.getElementById('category').innerText = data.category;
-                    status.innerText = "Click to record again";
+                    try {
+                        const response = await fetch('/process_audio', {
+                            method: 'POST',
+                            body: formData
+                        });
+
+                        if (!response.ok) throw new Error('Server error');
+
+                        const data = await response.json();
+
+                        document.getElementById('transcription').innerText = data.text || '(No speech detected)';
+                        document.getElementById('score').innerText = data.score;
+
+                        const categoryEl = document.getElementById('category');
+                        categoryEl.innerHTML = `<span class="category-badge category-${data.category.toLowerCase()}">${data.category}</span>`;
+
+                        resultsDiv.classList.add('show');
+                        status.innerText = "Done. Click to record again.";
+                        errorDiv.style.display = 'none';
+                    } catch (err) {
+                        status.innerText = "Click to record again";
+                        errorDiv.innerText = "Error processing audio. Please try again.";
+                        errorDiv.style.display = 'block';
+                    }
                 };
 
                 mediaRecorder.start();
                 micBtn.classList.add('recording');
-                status.innerText = "Recording... Click again to stop.";
-                
-                // Auto-stop after 30 seconds
-                setTimeout(() => {
-                    if (mediaRecorder.state === "recording") mediaRecorder.stop();
+                status.innerText = "Recording... (Max 30s)";
+                errorDiv.style.display = 'none';
+
+                recordingTimeout = setTimeout(() => {
+                    if (mediaRecorder && mediaRecorder.state === "recording") {
+                        mediaRecorder.stop();
+                    }
                 }, 30000);
+            } catch (err) {
+                errorDiv.innerText = "Microphone access denied. Please enable microphone permissions.";
+                errorDiv.style.display = 'block';
             }
         };
     </script>
