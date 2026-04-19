@@ -18,12 +18,10 @@ df = pd.read_csv(csv_path)
 df["text"]  = df["text"].str.lower()
 df["label"] = df["label"].astype(float)
 
-# ── Tuneable safety knob ──────────────────────────────────────────────────────
 # Lower = more aggressive HIGH routing (higher recall, higher FPR)
 # Raise to reduce false alarms once FNR is acceptably low
 MAX_ACCEPTABLE_FNR = 0.05
 
-# ── Band assignment ───────────────────────────────────────────────────────────
 def assign_band(score):
     if score <= 3:
         return "LOW"
@@ -38,7 +36,6 @@ print(df["label"].value_counts().sort_index())
 print("\nBand distribution:")
 print(df["band"].value_counts())
 
-# ── Train/test split ──────────────────────────────────────────────────────────
 X_train, X_test, y_train, y_test = train_test_split(
     df["text"], df[["label", "band"]],
     test_size=0.2,
@@ -50,7 +47,6 @@ y_test_label  = y_test["label"]
 y_train_band  = y_train["band"]
 y_test_band   = y_test["band"]
 
-# ── Shared TF-IDF vectorizer ──────────────────────────────────────────────────
 vectorizer  = TfidfVectorizer(ngram_range=(1, 2), min_df=1, max_df=0.95, sublinear_tf=True)
 X_train_vec = vectorizer.fit_transform(X_train)
 X_test_vec  = vectorizer.transform(X_test)
@@ -74,7 +70,6 @@ def high_recall(y_true, y_pred):
 high_cv = cross_val_score(stage1, X_train_vec, y_train_band, cv=cv, scoring=make_scorer(high_recall))
 print(f"  {'HIGH recall':>14}: {high_cv.mean():.4f} ± {high_cv.std():.4f}  ← most important")
 
-# ── Threshold calibration ─────────────────────────────────────────────────────
 HIGH_IDX = list(stage1.classes_).index("HIGH")
 s1_proba = stage1.predict_proba(X_test_vec)
 
@@ -105,7 +100,6 @@ for thresh in np.arange(0.20, 0.55, 0.05):
     acc  = accuracy_score(y_test_band, preds)
     sweep_results.append((thresh, fnr, fpr, acc, preds))
 
-    # Select: lowest FPR among thresholds where FNR <= MAX_ACCEPTABLE_FNR
     if fnr <= MAX_ACCEPTABLE_FNR and fpr < best_fpr:
         best_fpr    = fpr
         best_thresh = thresh
@@ -145,7 +139,6 @@ for i, band in enumerate(bands):
 print("\nFull classification report (Stage 1):")
 print(classification_report(y_test_band, s1_preds, labels=bands, digits=4))
 
-# ── Stage 2: one fine-grained classifier per band ────────────────────────────
 BAND_RANGES   = {"LOW": (1, 3), "MEDIUM": (4, 7), "HIGH": (8, 10)}
 stage2_models = {}
 

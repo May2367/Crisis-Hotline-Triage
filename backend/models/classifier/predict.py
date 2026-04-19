@@ -12,7 +12,6 @@ thresholds    = pickle.load(open(_DIR / "thresholds.pkl",    "rb"))
 HIGH_THRESHOLD = thresholds["high_threshold"]
 HIGH_IDX       = thresholds["high_idx"]
 
-# ── Keyword safety override ───────────────────────────────────────────────────
 CRISIS_KEYWORDS = {
     # Self-harm / suicidal
     "kill myself":          1.0,
@@ -31,6 +30,7 @@ CRISIS_KEYWORDS = {
     "i will shoot someone":       1.0,
     "i will stab someone":        1.0,
     "i have a gun":               1.0,
+    "drug":                 0.6
 }
 
 def keyword_signal(text):
@@ -43,7 +43,6 @@ def keyword_signal(text):
     return score, matches
 
 
-# ── Routing ───────────────────────────────────────────────────────────────────
 def route_level(score):
     if score >= 8.0:
         return "IMMEDIATE_ESCALATION"
@@ -52,7 +51,6 @@ def route_level(score):
     return "LOW_PRIORITY"
 
 
-# ── ML explainability (works with LogisticRegression) ────────────────────────
 def explain_stage1(vec, pred_band, top_k=5):
     probs      = stage1.predict_proba(vec)[0]
     classes    = stage1.classes_
@@ -75,7 +73,6 @@ def explain_stage1(vec, pred_band, top_k=5):
     }
 
 
-# ── Score refinement via Stage 2 ─────────────────────────────────────────────
 def refine_score(vec, band):
     entry = stage2_models.get(band)
     band_midpoints = {"LOW": 2.0, "MEDIUM": 5.5, "HIGH": 9.0}
@@ -99,11 +96,9 @@ def refine_score(vec, band):
     return score, score_probs
 
 
-# ── Main predict function ─────────────────────────────────────────────────────
 def predict(text):
     kw_score, kw_matches = keyword_signal(text)
 
-    # Hard safety override — bypass ML entirely
     if kw_score >= 0.95:
         return {
             "score":              10.0,
@@ -118,7 +113,6 @@ def predict(text):
 
     vec = vectorizer.transform([text.lower()])
 
-    # Stage 1: band classification with calibrated HIGH threshold
     s1_proba = stage1.predict_proba(vec)[0]
     if s1_proba[HIGH_IDX] >= HIGH_THRESHOLD:
         band = "HIGH"
@@ -126,14 +120,11 @@ def predict(text):
         band = stage1.classes_[int(np.argmax(s1_proba))]
     s1_conf = float(s1_proba[HIGH_IDX]) if band == "HIGH" else float(np.max(s1_proba))
 
-    # Stage 2: refine score within band
     raw_score, s2_probs = refine_score(vec, band)
 
-    # Keyword signal can only raise the score, never lower it
     score = max(raw_score, kw_score * 10.0)
     score = float(np.clip(score, 1.0, 10.0))
 
-    # Explainability
     s1_expl = explain_stage1(vec, band)
 
     return {
@@ -146,21 +137,3 @@ def predict(text):
         "stage2_score_probs": s2_probs,
         "method":             "ml_pipeline",
     }
-
-
-# ── Quick smoke-test ──────────────────────────────────────────────────────────
-if __name__ == "__main__":
-    samples = [
-        "I've been feeling a bit down lately, not sure what to do.",
-        "I can't stop crying and I don't know why I even bother anymore.",
-        "I want to hurt myself, I have a plan and I can't stop thinking about it.",
-        "I want to kill someone, I have a gun and I'm ready.",
-        "Just stressed about work deadlines this week.",
-    ]
-    for txt in samples:
-        r = predict(txt)
-        print(f"\nText:   {txt[:70]}")
-        print(f"Score:  {r['score']}/10  Band: {r['band']}  Route: {r['route']}")
-        print(f"Method: {r['method']}  Confidence: {r['confidence']}")
-        if r["triggered_by"]:
-            print(f"Keywords: {r['triggered_by']}")
