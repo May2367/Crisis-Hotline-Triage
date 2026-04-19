@@ -19,7 +19,6 @@ text,label
 "I'm just sitting here thinking about what to cook for dinner",1
 "I finished work and now I'm just unwinding",1
 "I'm getting ready to go to sleep after a normal day",1
-
 "I've been a little stressed about work deadlines lately",2
 "I didn't sleep great last night so I'm feeling kind of off today",2
 "I've got a lot to do this week and it's been on my mind",2
@@ -40,7 +39,6 @@ text,label
 "I've been slightly on edge for no clear reason",2
 "I'm just not feeling 100% emotionally today",2
 "I'm a little concerned about how things are going lately",2
-
 "I've been feeling pretty negative about myself lately",3
 "I'm kind of sad today, not sure why exactly",3
 "I keep thinking I should be doing better in life",3
@@ -61,8 +59,7 @@ text,label
 "I feel like I'm not doing enough no matter what I do",3
 "I'm having a rough emotional day but it's not extreme",3
 "I've just been feeling off and a bit negative",3
-
-"I'm feeling really overwhelmed with everything going on",4
+"I'm feeling really overwhelmed with everything going on",3
 "I can't seem to keep up with all my responsibilities",4
 "I'm anxious about a bunch of things piling up",4
 "I feel pretty stressed and it's hard to relax",4
@@ -73,16 +70,15 @@ text,label
 "I'm having trouble handling my workload right now",4
 "I feel kind of panicked thinking about tomorrow",4
 "I'm overwhelmed and don't really know where to start",4
-"I've been feeling on edge and restless",4
+"I've been feeling on edge and restless",3
 "I'm stressed out and it's affecting my mood a lot",4
 "I feel like everything is happening at once",4
 "I'm anxious and it's hard to calm myself down",4
-"I'm feeling pretty overwhelmed in general lately",4
+"I'm feeling pretty overwhelmed in general lately",3
 "I can't stop worrying about multiple things",4
 "I'm emotionally exhausted and kind of shut down",4
 "I'm having a hard time coping with stress today",4
 "I feel like I'm barely keeping it together",4
-
 "I'm really struggling to manage everything right now",5
 "I feel pretty anxious most of the day lately",5
 "I'm overwhelmed and it's starting to affect my sleep",5
@@ -94,7 +90,7 @@ text,label
 "I'm having trouble calming down even when things are fine",5
 "I feel like I'm under too much pressure right now",5
 "I'm mentally exhausted and it's hard to function normally",5
-"I keep spiraling into negative thoughts",5
+"I keep spiraling into negative thoughts",4
 "I'm struggling more than usual and it's getting worse",5
 "I feel anxious even when nothing specific is wrong",5
 "I'm finding it hard to keep up socially and at work",5
@@ -103,10 +99,9 @@ text,label
 "I feel like I can't fully relax at all lately",5
 "I'm emotionally worn out and drained",5
 "I'm really struggling but still trying to manage day to day",5
-
 "I'm feeling very anxious and it's hard to breathe normally",6
 "I can't stop worrying and it's affecting everything I do",6
-"I'm emotionally overwhelmed and close to breaking down",6
+"I'm emotionally overwhelmed and close to breaking down",7
 "I feel panicked even over small things today",6
 "I'm struggling to get through the day without feeling distressed",6
 "I feel like I'm constantly on edge and can't calm down",6
@@ -124,30 +119,27 @@ text,label
 "I feel stuck in a cycle of stress and worry",6
 "I'm really distressed and it's hard to focus on anything else",6
 "I feel like I'm barely holding myself together right now",6
-
 "I feel like everything is falling apart and I can't handle it",7
 "I'm in a really dark place emotionally right now",7
 "I feel hopeless about things getting better",7
 "I'm struggling a lot and don't know what to do anymore",7
 "I feel overwhelmed to the point of breaking down often",7
 "I can't see a way out of how I'm feeling right now",7
-"I'm really emotionally unstable and it's getting worse",7
+"I'm really emotionally unstable and it's getting worse",6
 "I feel like I'm drowning in stress and sadness",7
 "I don't feel okay at all and it's hard to function",7
 "I'm having intense emotional pain and can't shake it",7
-"I feel like I'm losing control of my thoughts",7
+"I feel like I'm losing control of my thoughts",6
 "I'm really struggling with hopelessness today",7
 "I feel completely overwhelmed and exhausted mentally",7
-"I'm in crisis emotionally and can't calm myself down",7
 "I feel like I can't cope with anything anymore",7
 "I'm having frequent breakdowns and it's scary",7
 "I feel trapped in my own thoughts and emotions",7
 "I'm really distressed and can't find relief",7
 "I feel like everything is too much right now",7
 "I'm barely managing and feel close to breaking down",7
-
 "I'm in a severe emotional crisis and I don't know what to do",8
-"I feel completely hopeless and overwhelmed by everything",8
+"I feel completely hopeless and overwhelmed by everything",7
 "I'm having intense panic and can't calm myself at all",8
 "I feel like I'm at my breaking point right now",8
 "I'm struggling with very dark thoughts and it's frightening",8
@@ -166,7 +158,6 @@ text,label
 "I feel like I'm losing control and it's terrifying",8
 "I'm in crisis and everything feels unbearable",8
 "I feel extremely distressed and can't cope at all",8
-
 "I don't want to be here anymore, I feel completely hopeless",9
 "I'm thinking about hurting myself and I don't know what to do",9
 "I feel like there's no point in anything right now",9
@@ -187,7 +178,6 @@ text,label
 "I feel like I'm losing control and might act on it",9
 "I'm in crisis and need support right away",9
 "I'm feeling extremely hopeless and it's becoming dangerous",9
-
 "I'm thinking about ending my life and I feel out of control",10
 "I don't want to live anymore and I feel like there's no escape",10
 "I'm in immediate danger from my thoughts and I can't cope",10
@@ -202,213 +192,211 @@ text,label
 "I'm having intense thoughts about not wanting to exist",10
 "I feel like I'm at a breaking point and might act on it",10
 "I'm in urgent emotional danger and can't manage this alone",10
-"I feel like everything is over for me",10
+"I feel like everything is over for me",9
 "I'm experiencing extreme psychological distress right now",10
 "I feel like I could lose control at any moment",10
 "I'm in a critical state and need help immediately",10
 "I'm overwhelmed by thoughts of self-harm and despair",10
 "I feel like I don't want to be alive anymore and it's urgent",10
-
-"I just got up and I’m making breakfast while thinking about what I need to do later, nothing too stressful today",1
-"I’m sitting on the porch drinking water and listening to birds, just kind of enjoying a quiet morning",1
-"I finished my shift and I’m heading home, probably just going to relax and watch something tonight",1
-"I went to the gym earlier, felt pretty normal, now I’m stretching and getting ready for dinner",1
-"I’m running a couple errands, picked up what I needed from the store, everything’s going smoothly",1
-"I’m just cleaning around the house and listening to a podcast while I do it",1
-"I had class earlier and now I’m just reviewing notes before I take a break",1
-"I’m waiting in line at the coffee shop, scrolling on my phone, nothing unusual going on",1
-"I’m cooking dinner and thinking about what show I want to watch after this",1
+"I just got up and I'm making breakfast while thinking about what I need to do later, nothing too stressful today",1
+"I'm sitting on the porch drinking water and listening to birds, just kind of enjoying a quiet morning",1
+"I finished my shift and I'm heading home, probably just going to relax and watch something tonight",1
+"I went to the gym earlier, felt pretty normal, now I'm stretching and getting ready for dinner",1
+"I'm running a couple errands, picked up what I needed from the store, everything's going smoothly",1
+"I'm just cleaning around the house and listening to a podcast while I do it",1
+"I had class earlier and now I'm just reviewing notes before I take a break",1
+"I'm waiting in line at the coffee shop, scrolling on my phone, nothing unusual going on",1
+"I'm cooking dinner and thinking about what show I want to watch after this",1
 "I took my dog out for a walk and the weather is actually really nice today",1
-"I’m just sitting in my car for a minute before heading into work, kind of a normal day",1
-"I’ve been organizing my schedule for the week and it feels pretty manageable right now",1
-"I’m hanging out with a friend later but for now I’m just relaxing at home",1
-"I went grocery shopping and I’m unpacking everything while planning meals",1
-"I’m just doing some laundry and catching up on messages from friends",1
-"I’m watching a movie and eating snacks, just having a chill evening",1
-"I’m at work but it’s been pretty quiet so I’m just getting through emails",1
-"I’m walking through the park and taking my time, nothing stressful happening today",1
-"I’m just tidying up my desk and getting ready for tomorrow",1
-"I finished my tasks early so I’m just kind of relaxing and taking it easy",1
-"I’m feeling a bit tired after not sleeping great and I’ve got a lot of small tasks piling up",2
-"I’ve been slightly stressed about getting everything done today but I’m trying to stay organized",2
-"I’m a little worried about an upcoming conversation I need to have at work",2
-"I didn’t plan my day well and now I’m just trying to catch up on things",2
-"I’ve been feeling kind of off lately, nothing major but just not fully myself",2
-"I’m a bit frustrated because things keep taking longer than I expected",2
-"I’ve got some mild anxiety about a deadline coming up later this week",2
-"I’m just a little overwhelmed but I think I can manage everything",2
-"I’ve been overthinking a few small mistakes I made earlier today",2
-"I’m slightly on edge but I’m still functioning fine and getting things done",2
-"I’m feeling a bit down today but I’m still going through my normal routine",2
-"I’ve been distracted all day and it’s making it hard to focus properly",2
-"I’m a little stressed about money this month but it’s not urgent yet",2
-"I had a rough start to the day and it’s been hard to get fully into it",2
-"I’m feeling some pressure at work but I’m trying to take it step by step",2
-"I’m mildly annoyed at a situation but I’ll probably move past it soon",2
-"I’ve been feeling a bit anxious in the background but nothing overwhelming",2
-"I’m just not fully energized today and it’s affecting my focus a bit",2
-"I’m slightly worried about how a conversation went earlier",2
-"I’ve been feeling a little emotionally tired but still managing my day",2
-"I’ve been feeling low and questioning myself a lot today",3
-"I’m kind of sad and keep replaying things that happened earlier this week",3
-"I’ve been feeling lonely even though I’ve been talking to people",3
-"I feel a bit disconnected from everything and it’s hard to shake",3
-"I’ve been second guessing a lot of decisions I’ve made recently",3
-"I’m feeling kind of down and it’s affecting my motivation",3
-"I’ve been more irritable than usual and I don’t really know why",3
-"I feel like I’m not doing enough even though I’m trying my best",3
-"I’ve been feeling emotionally tired and kind of drained lately",3
-"I’m a bit upset about how something turned out earlier today",3
-"I’ve been feeling unmotivated and just going through the motions",3
-"I feel like I’m stuck in my own head a lot today",3
-"I’ve been feeling a bit rejected after a conversation didn’t go well",3
-"I’m low energy emotionally and it’s making everything feel heavier",3
-"I’ve been thinking too much about things I can’t change",3
-"I feel a bit lost about what I’m doing right now",3
-"I’ve been feeling kind of sad but I’m still getting things done",3
+"I'm just sitting in my car for a minute before heading into work, kind of a normal day",1
+"I've been organizing my schedule for the week and it feels pretty manageable right now",1
+"I'm hanging out with a friend later but for now I'm just relaxing at home",1
+"I went grocery shopping and I'm unpacking everything while planning meals",1
+"I'm just doing some laundry and catching up on messages from friends",1
+"I'm watching a movie and eating snacks, just having a chill evening",1
+"I'm at work but it's been pretty quiet so I'm just getting through emails",1
+"I'm walking through the park and taking my time, nothing stressful happening today",1
+"I'm just tidying up my desk and getting ready for tomorrow",1
+"I finished my tasks early so I'm just kind of relaxing and taking it easy",1
+"I'm feeling a bit tired after not sleeping great and I've got a lot of small tasks piling up",2
+"I've been slightly stressed about getting everything done today but I'm trying to stay organized",2
+"I'm a little worried about an upcoming conversation I need to have at work",2
+"I didn't plan my day well and now I'm just trying to catch up on things",2
+"I've been feeling kind of off lately, nothing major but just not fully myself",2
+"I'm a bit frustrated because things keep taking longer than I expected",2
+"I've got some mild anxiety about a deadline coming up later this week",2
+"I'm just a little overwhelmed but I think I can manage everything",2
+"I've been overthinking a few small mistakes I made earlier today",2
+"I'm slightly on edge but I'm still functioning fine and getting things done",2
+"I'm feeling a bit down today but I'm still going through my normal routine",2
+"I've been distracted all day and it's making it hard to focus properly",2
+"I'm a little stressed about money this month but it's not urgent yet",2
+"I had a rough start to the day and it's been hard to get fully into it",2
+"I'm feeling some pressure at work but I'm trying to take it step by step",2
+"I'm mildly annoyed at a situation but I'll probably move past it soon",2
+"I've been feeling a bit anxious in the background but nothing overwhelming",2
+"I'm just not fully energized today and it's affecting my focus a bit",2
+"I'm slightly worried about how a conversation went earlier",2
+"I've been feeling a little emotionally tired but still managing my day",2
+"I've been feeling low and questioning myself a lot today",3
+"I'm kind of sad and keep replaying things that happened earlier this week",3
+"I've been feeling lonely even though I've been talking to people",3
+"I feel a bit disconnected from everything and it's hard to shake",3
+"I've been second guessing a lot of decisions I've made recently",3
+"I'm feeling kind of down and it's affecting my motivation",3
+"I've been more irritable than usual and I don't really know why",3
+"I feel like I'm not doing enough even though I'm trying my best",3
+"I've been feeling emotionally tired and kind of drained lately",3
+"I'm a bit upset about how something turned out earlier today",3
+"I've been feeling unmotivated and just going through the motions",3
+"I feel like I'm stuck in my own head a lot today",3
+"I've been feeling a bit rejected after a conversation didn't go well",3
+"I'm low energy emotionally and it's making everything feel heavier",3
+"I've been thinking too much about things I can't change",3
+"I feel a bit lost about what I'm doing right now",3
+"I've been feeling kind of sad but I'm still getting things done",3
 "I feel emotionally off balance and not like myself today",3
-"I’ve been struggling with motivation and feeling a bit flat",3
-"I’m feeling down but I’m still trying to push through my day",3
-"I feel overwhelmed trying to manage everything and I’m starting to panic a bit",4
-"I’ve got so much going on and my mind won’t slow down at all",4
-"I’m feeling anxious and it’s hard to focus on anything properly",4
-"I keep thinking something is going to go wrong and I can’t relax",4
-"I’m emotionally exhausted and everything feels harder than usual",4
-"I feel tense all day like I can’t fully calm down",4
-"I’m overwhelmed with tasks and I don’t know where to start",4
-"I’ve been feeling on edge and it’s affecting my ability to think clearly",4
-"I’m stressed and it feels like everything is happening at once",4
-"I’m struggling to keep up and it’s making me really anxious",4
-"I feel like I’m barely managing my responsibilities right now",4
-"I’ve been getting really anxious about small things lately",4
+"I've been struggling with motivation and feeling a bit flat",3
+"I'm feeling down but I'm still trying to push through my day",3
+"I feel overwhelmed trying to manage everything and I'm starting to panic a bit",4
+"I've got so much going on and my mind won't slow down at all",4
+"I'm feeling anxious and it's hard to focus on anything properly",4
+"I keep thinking something is going to go wrong and I can't relax",4
+"I'm emotionally exhausted and everything feels harder than usual",4
+"I feel tense all day like I can't fully calm down",4
+"I'm overwhelmed with tasks and I don't know where to start",4
+"I've been feeling on edge and it's affecting my ability to think clearly",4
+"I'm stressed and it feels like everything is happening at once",4
+"I'm struggling to keep up and it's making me really anxious",4
+"I feel like I'm barely managing my responsibilities right now",4
+"I've been getting really anxious about small things lately",4
 "I feel emotionally drained and I just want to shut down",4
-"I’m having trouble sleeping because my mind keeps racing",4
-"I feel like I’m under constant pressure and it’s wearing me down",4
-"I’m overwhelmed and trying to breathe through it but it’s hard",4
+"I'm having trouble sleeping because my mind keeps racing",4
+"I feel like I'm under constant pressure and it's wearing me down",4
+"I'm overwhelmed and trying to breathe through it but it's hard",4
 "I keep worrying about things even when I try not to",4
-"I feel like I’m stuck in stress mode all the time",4
-"I’m finding it hard to function normally today because of anxiety",4
-"I feel like I’m close to breaking down from stress",4
-"I feel like I can’t keep up with anything and I’m getting worse",5
-"I’ve been anxious most of the day and it’s not letting up",5
-"I’m overwhelmed and it’s starting to affect my daily functioning",5
-"I keep spiraling into worried thoughts and can’t stop them",5
+"I feel like I'm stuck in stress mode all the time",4
+"I'm finding it hard to function normally today because of anxiety",4
+"I feel like I'm close to breaking down from stress",4
+"I feel like I can't keep up with anything and I'm getting worse",5
+"I've been anxious most of the day and it's not letting up",5
+"I'm overwhelmed and it's starting to affect my daily functioning",5
+"I keep spiraling into worried thoughts and can't stop them",5
 "I feel emotionally unstable and it comes in waves all day",5
-"I’m really struggling to manage stress and it’s building up",5
-"I feel like I’m constantly on edge and can’t relax at all",5
-"I’ve been feeling mentally exhausted for days now",5
-"I can’t focus because I keep worrying about everything",5
-"I feel like I’m falling behind in life and it’s stressing me out",5
-"I’m having trouble sleeping and my anxiety keeps waking me up",5
+"I'm really struggling to manage stress and it's building up",5
+"I feel like I'm constantly on edge and can't relax at all",5
+"I've been feeling mentally exhausted for days now",5
+"I can't focus because I keep worrying about everything",5
+"I feel like I'm falling behind in life and it's stressing me out",5
+"I'm having trouble sleeping and my anxiety keeps waking me up",5
 "I feel overwhelmed even when I try to break things down",5
-"I’m struggling to stay calm even in normal situations",5
-"I feel like I’m not coping well with anything right now",5
+"I'm struggling to stay calm even in normal situations",5
+"I feel like I'm not coping well with anything right now",5
 "I keep feeling like something bad is going to happen",5
-"I’m emotionally drained and it’s affecting my performance",5
-"I feel like I’m stuck in constant stress and worry",5
-"I’ve been having frequent anxiety spikes throughout the day",5
-"I feel like I can’t get my thoughts under control",5
-"I’m really struggling but still trying to function normally",5
-"I feel like I’m barely holding it together emotionally",6
-"I’m very anxious and it feels like I can’t breathe properly sometimes",6
+"I'm emotionally drained and it's affecting my performance",5
+"I feel like I'm stuck in constant stress and worry",5
+"I've been having frequent anxiety spikes throughout the day",5
+"I feel like I can't get my thoughts under control",5
+"I'm really struggling but still trying to function normally",5
+"I feel like I'm barely holding it together emotionally",6
+"I'm very anxious and it feels like I can't breathe properly sometimes",6
 "I keep having intense waves of stress that hit out of nowhere",6
-"I feel overwhelmed and it’s getting harder to cope each day",6
-"I can’t stop worrying and it’s affecting everything I do",6
+"I feel overwhelmed and it's getting harder to cope each day",6
+"I can't stop worrying and it's affecting everything I do",6
 "I feel emotionally exhausted and mentally overloaded",6
-"I’m struggling to think clearly because of constant anxiety",6
-"I feel like I’m close to breaking down emotionally today",6
-"I’ve been having panic-like feelings that are hard to control",6
-"I feel really distressed and it’s hard to focus on anything else",6
-"I’m overwhelmed by everything and it feels unmanageable",6
-"I feel like I’m losing control of my emotions at times",6
-"I’m anxious all the time and it’s really wearing me down",6
-"I feel mentally flooded and can’t process things properly",6
-"I’m struggling to function because of constant stress",6
-"I feel like I can’t calm myself down no matter what I try",6
-"I’m really distressed and it’s affecting my whole day",6
-"I feel like I’m stuck in a cycle of anxiety and exhaustion",6
-"I’m barely keeping up and it feels like too much",6
-"I feel like I’m reaching my limit emotionally",6
-"I feel like everything is collapsing and I can’t handle it anymore",7
-"I’m in a really bad emotional place and I don’t know what to do",7
+"I'm struggling to think clearly because of constant anxiety",6
+"I feel like I'm close to breaking down emotionally today",6
+"I've been having panic-like feelings that are hard to control",6
+"I feel really distressed and it's hard to focus on anything else",6
+"I'm overwhelmed by everything and it feels unmanageable",6
+"I feel like I'm losing control of my emotions at times",6
+"I'm anxious all the time and it's really wearing me down",6
+"I feel mentally flooded and can't process things properly",6
+"I'm struggling to function because of constant stress",6
+"I feel like I can't calm myself down no matter what I try",6
+"I'm really distressed and it's affecting my whole day",6
+"I feel like I'm stuck in a cycle of anxiety and exhaustion",6
+"I'm barely keeping up and it feels like too much",6
+"I feel like I'm reaching my limit emotionally",6
+"I feel like everything is collapsing and I can't handle it anymore",7
+"I'm in a really bad emotional place and I don't know what to do",7
 "I feel completely overwhelmed and hopeless about things improving",7
-"I’m struggling deeply and it feels like I’m drowning in emotions",7
-"I can’t cope with anything right now and it’s getting worse",7
-"I feel like I’m losing control of my thoughts and emotions",7
-"I’m in a dark place mentally and it’s hard to function",7
+"I'm struggling deeply and it feels like I'm drowning in emotions",7
+"I can't cope with anything right now and it's getting worse",7
+"I feel like I'm losing control of my thoughts and emotions",6
+"I'm in a dark place mentally and it's hard to function",6
 "I feel emotionally trapped and unable to get out of it",7
-"I’m having breakdown moments and it’s really scary",7
-"I feel like I can’t handle my life right now at all",7
-"I’m overwhelmed to the point where I just want to shut down",7
-"I feel like everything is too much and I can’t escape it",7
-"I’m really distressed and nothing is helping me feel better",7
-"I feel like I’m at my limit and might break soon",7
-"I’m struggling with intense hopelessness today",7
-"I feel like I’m barely holding on emotionally",7
-"I’m in crisis emotionally and everything feels unbearable",7
-"I feel like I can’t manage even basic things anymore",7
-"I’m really overwhelmed and emotionally falling apart",7
-"I feel like I’m stuck in constant distress",7
-"I feel like I’m at a breaking point and it’s urgent",8
-"I’m in severe emotional distress and I can’t calm down at all",8
+"I'm having breakdown moments and it's really scary",7
+"I feel like I can't handle my life right now at all",7
+"I'm overwhelmed to the point where I just want to shut down",7
+"I feel like everything is too much and I can't escape it",7
+"I'm really distressed and nothing is helping me feel better",7
+"I feel like I'm at my limit and might break soon",7
+"I'm struggling with intense hopelessness today",7
+"I feel like I'm barely holding on emotionally",7
+"I feel like I can't manage even basic things anymore",7
+"I'm really overwhelmed and emotionally falling apart",7
+"I feel like I'm stuck in constant distress",6
+"I feel like I'm at a breaking point and it's urgent",8
+"I'm in severe emotional distress and I can't calm down at all",8
 "I feel completely overwhelmed and out of control mentally",8
-"I’m having intense emotional pain and it won’t stop",8
-"I feel like I’m losing grip on reality a bit right now",8
-"I’m in a very bad state emotionally and need help",8
+"I'm having intense emotional pain and it won't stop",8
+"I feel like I'm losing grip on reality a bit right now",8
+"I'm in a very bad state emotionally and need help",8
 "I feel like everything is crashing down on me",8
-"I’m extremely distressed and can’t function at all",8
-"I feel like I’m at my limit and it’s getting dangerous",8
-"I’m having constant panic and overwhelming thoughts",8
-"I feel like I can’t handle my mind right now",8
-"I’m in crisis and it feels like I’m spiraling fast",8
+"I'm extremely distressed and can't function at all",8
+"I feel like I'm at my limit and it's getting dangerous",8
+"I'm having constant panic and overwhelming thoughts",8
+"I feel like I can't handle my mind right now",8
+"I'm in crisis and it feels like I'm spiraling fast",8
 "I feel completely unsafe in my own thoughts",8
-"I’m overwhelmed to the point of emotional collapse",8
+"I'm overwhelmed to the point of emotional collapse",8
 "I feel like I might lose control any moment",8
-"I’m in severe distress and can’t cope with anything",8
+"I'm in severe distress and can't cope with anything",8
 "I feel like I need immediate help because this is too much",8
-"I’m emotionally overwhelmed and it’s escalating quickly",8
-"I feel like I can’t escape this mental state",8
-"I’m in urgent distress and everything feels unbearable",8
-"I don’t want to be here anymore and I feel completely hopeless",9
-"I’m thinking about hurting myself and I feel scared about it",9
-"I feel like there’s no future for me and I can’t go on",9
-"I’m in a dangerous emotional state and need help right away",9
-"I can’t stop having thoughts of self-harm and it’s intense",9
-"I feel like I might do something to myself and I’m not safe",9
-"I’m overwhelmed with hopelessness and it feels urgent",9
+"I'm emotionally overwhelmed and it's escalating quickly",8
+"I feel like I can't escape this mental state",8
+"I'm in urgent distress and everything feels unbearable",8
+"I don't want to be here anymore and I feel completely hopeless",9
+"I'm thinking about hurting myself and I feel scared about it",9
+"I feel like there's no future for me and I can't go on",9
+"I'm in a dangerous emotional state and need help right away",9
+"I can't stop having thoughts of self-harm and it's intense",9
+"I feel like I might do something to myself and I'm not safe",9
+"I'm overwhelmed with hopelessness and it feels urgent",9
 "I feel like I want everything to just end right now",9
-"I’m in severe distress and I don’t trust myself today",9
-"I feel like I’m on the edge and could act on my thoughts",9
-"I’m having really dark thoughts and I can’t control them",9
-"I feel like I can’t survive feeling like this anymore",9
-"I’m scared of what I might do because I feel out of control",9
-"I feel like I’m in immediate emotional danger",9
-"I’m in crisis and I need urgent support right now",9
-"I feel completely hopeless and it’s becoming dangerous",9
-"I can’t cope and I feel like I might hurt myself",9
-"I’m overwhelmed and I don’t feel safe at all",9
-"I feel like I’m losing control and it’s frightening",9
-"I’m in a very dark place and I need help immediately",9
-"I’m thinking about ending my life and I feel out of control",10
-"I don’t want to live anymore and everything feels unbearable",10
-"I feel like I’m at immediate risk of harming myself",10
-"I can’t trust myself right now and I feel unsafe",10
-"I’m in extreme emotional crisis and need urgent help",10
-"I feel like everything is over and there’s no way out",10
-"I’m having intense thoughts of self-harm that won’t stop",10
+"I'm in severe distress and I don't trust myself today",9
+"I feel like I'm on the edge and could act on my thoughts",9
+"I'm having really dark thoughts and I can't control them",9
+"I feel like I can't survive feeling like this anymore",9
+"I'm scared of what I might do because I feel out of control",9
+"I feel like I'm in immediate emotional danger",9
+"I'm in crisis and I need urgent support right now",9
+"I feel completely hopeless and it's becoming dangerous",9
+"I can't cope and I feel like I might hurt myself",9
+"I'm overwhelmed and I don't feel safe at all",9
+"I feel like I'm losing control and it's frightening",9
+"I'm in a very dark place and I need help immediately",9
+"I'm thinking about ending my life and I feel out of control",10
+"I don't want to live anymore and everything feels unbearable",10
+"I feel like I'm at immediate risk of harming myself",10
+"I can't trust myself right now and I feel unsafe",10
+"I'm in extreme emotional crisis and need urgent help",10
+"I feel like everything is over and there's no way out",8
+"I'm having intense thoughts of self-harm that won't stop",10
 "I feel like I might act on dangerous thoughts right now",10
-"I’m in critical distress and can’t manage this alone",10
+"I'm in critical distress and can't manage this alone",10
 "I feel completely consumed by despair and hopelessness",10
-"I’m in a state of emergency emotionally and I need help",10
+"I'm in a state of emergency emotionally and I need help",10
 "I feel like I could lose control at any moment and act on it",10
-"I’m overwhelmed by urges to hurt myself and it’s urgent",10
-"I feel like I don’t want to exist anymore",10
-"I’m in severe crisis and everything feels like it’s ending",10
-"I feel unsafe in my own mind and it’s escalating fast",10
-"I can’t cope and I feel like I’m in immediate danger",10
-"I’m having overwhelming thoughts of not wanting to live",10
-"I feel like I’m at my breaking point and it’s critical",10
-"I’m in extreme distress and need immediate intervention",10
+"I'm overwhelmed by urges to hurt myself and it's urgent",10
+"I feel like I don't want to exist anymore",10
+"I'm in severe crisis and everything feels like it's ending",10
+"I feel unsafe in my own mind and it's escalating fast",10
+"I can't cope and I feel like I'm in immediate danger",10
+"I'm having overwhelming thoughts of not wanting to live",10
+"I feel like I'm at my breaking point and it's critical",10
+"I'm in extreme distress and need immediate intervention",10
 "I had a normal day but I feel slightly off emotionally",2
 "I'm okay overall but a bit more stressed than usual",2
 "I feel fine but there's a small sense of worry in the background",2
@@ -419,18 +407,16 @@ text,label
 "I'm getting through the day but I feel emotionally off",3
 "I feel somewhat overwhelmed but still in control",3
 "I'm a bit anxious and it's affecting my focus slightly",3
-
 "I feel overwhelmed and it's getting harder to manage things",4
 "I'm stressed and starting to feel emotionally drained",4
 "I'm anxious and it's affecting my ability to concentrate",4
 "I feel pressure building up and it's hard to relax",4
-"I'm managing but it's taking a lot of effort",4
+"I'm managing but it's taking a lot of effort",2
 "I'm feeling tense and it's lasting most of the day",4
 "I'm stressed and my thoughts keep racing",4
 "I feel like I'm juggling too many things right now",4
 "I'm overwhelmed and not sure how to prioritize everything",4
 "I feel anxious and it's starting to interfere with my day",4
-
 "I'm overwhelmed and struggling to keep everything together",5
 "I feel anxious most of the time and it's exhausting",5
 "I'm having trouble calming down even when I try",5
@@ -441,7 +427,6 @@ text,label
 "I'm constantly worried and can't relax",5
 "I'm struggling to manage my emotions throughout the day",5
 "I feel mentally exhausted and overwhelmed",5
-
 "I feel extremely anxious and it's hard to think clearly",6
 "I'm overwhelmed and it's becoming difficult to function",6
 "I feel like I'm close to breaking down emotionally",6
@@ -452,7 +437,6 @@ text,label
 "I'm struggling to manage even simple tasks",6
 "I feel like stress is consuming me",6
 "I'm anxious all the time and it's wearing me out",6
-
 "I feel like I'm falling apart and can't handle things",7
 "I'm overwhelmed and it feels unbearable",7
 "I feel hopeless about things getting better",7
@@ -463,7 +447,6 @@ text,label
 "I'm in a really bad emotional state",7
 "I feel like I'm losing control completely",7
 "I'm overwhelmed and can't find relief",7
-
 "I feel like I'm at a breaking point and it's serious",8
 "I'm in severe distress and can't calm down",8
 "I feel completely overwhelmed and out of control",8
@@ -474,7 +457,6 @@ text,label
 "I'm overwhelmed to the point of emotional shutdown",8
 "I feel like I can't handle my mind right now",8
 "I'm in crisis and everything feels unbearable",8
-
 "I'm having thoughts of hurting myself and it's scary",9
 "I feel like I might act on dangerous thoughts",9
 "I'm overwhelmed and don't feel safe with myself",9
@@ -485,8 +467,6 @@ text,label
 "I feel like I'm on the edge and it's dangerous",9
 "I'm overwhelmed and feel unsafe",9
 "I feel like I might hurt myself if this continues",9
-
-"I'm thinking about ending my life and I feel out of control",10
 "I don't want to live anymore and I feel unsafe",10
 "I'm in immediate danger from my thoughts",10
 "I feel like I might act on self-harm right now",10
@@ -496,7 +476,6 @@ text,label
 "I feel like everything is over and I can't go on",10
 "I'm in a critical state and need immediate support",10
 "I feel like I might do something irreversible",10
-
 "I feel okay but slightly distracted and tired",2
 "I'm doing alright but feel mildly stressed",2
 "I feel a bit uneasy but still functioning normally",2
@@ -517,10 +496,9 @@ text,label
 "I'm in severe distress and can't cope",8
 "I feel like I'm losing control and it's dangerous",9
 "I feel like I might hurt myself right now",10
-
 "I had a good day but still feel a bit anxious underneath",3
 "I feel okay but there's some stress lingering",3
-"I'm managing but feeling increasingly overwhelmed",4
+"I'm managing but feeling increasingly overwhelmed",3
 "I feel anxious and it's hard to ignore",4
 "I'm overwhelmed and it's affecting my mood",5
 "I feel mentally exhausted and stressed",5
@@ -531,7 +509,6 @@ text,label
 "I'm in a crisis and can't manage it",8
 "I feel like I'm in danger from my own thoughts",9
 "I feel like I might act on harmful thoughts",10
-
 "I feel slightly off but still okay overall",2
 "I feel a bit stressed but it's manageable",2
 "I'm okay but a little overwhelmed",3
@@ -542,8 +519,7 @@ text,label
 "I'm in severe distress and need help",8
 "I feel unsafe and worried about myself",9
 "I feel like I might hurt myself",10
-
-"I feel calm but slightly distracted",1
+"I feel calm but slightly distracted",2
 "I'm relaxed and nothing is really bothering me",1
 "I'm doing fine and just going through my day",1
 "I feel okay but slightly tired",2
@@ -556,107 +532,8 @@ text,label
 "I'm in severe emotional distress",8
 "I'm having thoughts of self-harm",9
 "I'm thinking about ending my life",10
-"I don't want to do this anymore",6
+"I don't want to do this anymore",5
 "Everything sucks. I just want to talk to someone.",5
-
-"Everything feels normal today, just a bit of tiredness in the background",2
-"Morning started fine but there is a slight sense of unease",2
-"Work is manageable but focus feels slightly off",2
-"Small tasks are getting done but stress is slowly building",3
-"Some emotional heaviness is noticeable throughout the day",3
-"Routine is intact but motivation feels lower than usual",3
-"A bit of anxiety is present while handling daily responsibilities",3
-"Pressure from upcoming deadlines is becoming harder to ignore",4
-"Concentration is breaking due to rising stress levels",4
-"Tasks are piling up and everything feels harder to manage",4
-"Restlessness is present most of the day",4
-"Sleep quality has dropped due to ongoing worry",4
-"Emotional fatigue is becoming more noticeable over time",4
-"Stress is starting to interfere with normal functioning",4
-"Constant worry is making it difficult to focus properly",5
-"Emotional exhaustion is affecting productivity significantly",5
-"Feelings of being overwhelmed are present throughout the day",5
-"Anxiety spikes are occurring more frequently than usual",5
-"Control over thoughts feels reduced and unstable",5
-"Normal tasks feel unusually difficult to complete",5
-"Stress response is staying active even in calm situations",5
-"Racing thoughts are making relaxation difficult",5
-"Persistent worry is affecting overall mood and energy",5
-"Coping with daily responsibilities feels increasingly difficult",6
-"Emotional strain is making it hard to think clearly",6
-"Stress levels are interfering with decision making",6
-"Feeling mentally overloaded is becoming constant",6
-"Calm moments are rare and short-lived",6
-"Emotional control feels unstable and unpredictable",6
-"Sense of being overwhelmed is persistent and intense",6
-"Functioning normally is becoming increasingly difficult",6
-"Distress is affecting both focus and physical well-being",6
-"Emotional pressure feels too heavy to manage",7
-"Hopelessness is becoming more frequent throughout the day",7
-"Breaking point feels closer with each passing hour",7
-"Emotional pain is constant and difficult to ignore",7
-"Sense of losing control is becoming stronger",7
-"Functioning normally is barely possible now",7
-"Everything feels emotionally overwhelming and unmanageable",7
-"Crisis-like emotional state is becoming more persistent",7
-"Severe emotional instability is affecting all aspects of life",8
-"Distress is reaching a level where normal coping fails",8
-"Sense of reality feels unstable under emotional pressure",8
-"Overwhelming thoughts are making it hard to function",8
-"Emotional collapse feels imminent without relief",8
-"Psychological distress is affecting basic functioning",8
-"Control over emotions feels significantly weakened",8
-"Critical emotional state is persisting without improvement",8
-"Thoughts of self-harm are becoming intrusive and frequent",9
-"Safety with own thoughts feels compromised",9
-"Risk of acting on harmful impulses feels increased",9
-"Emotional pain is reaching dangerous levels",9
-"Sense of hopelessness is becoming overwhelming and urgent",9
-"Control over impulses feels severely reduced",9
-"Distress is reaching a level that feels unsafe",9
-"Urgent need for emotional support is becoming clear",9
-"Immediate danger from emotional state feels possible",10
-"Severe psychological crisis is currently ongoing",10
-"Loss of control over thoughts feels complete",10
-"Risk of self-harm feels immediate and critical",10
-"Emotional pain is unbearable and constant",10
-"Sense of safety is completely absent",10
-"Despair is overwhelming every thought process",10
-"Urgent intervention is necessary due to mental state",10
-"Normal functioning is no longer possible under current distress",10
-"Morning routine continues but stress is slowly increasing",3
-"Daily responsibilities are being completed with difficulty",4
-"Emotional pressure is rising while trying to stay functional",5
-"Focus is breaking due to persistent anxious thoughts",5
-"Stress is building and becoming harder to ignore",4
-"Calm moments are interrupted by ongoing worry",5
-"Workload feels unmanageable under current mental strain",6
-"Emotional exhaustion is affecting even simple tasks",6
-"Sense of being overwhelmed is becoming constant",7
-"Severe distress is impacting ability to function",8
-"Risk of emotional breakdown feels high",8
-"Thought patterns are becoming increasingly negative and intrusive",9
-"Critical emotional state is escalating rapidly",10
-"Normal thinking is being replaced by overwhelming despair",10
-"Basic tasks are still being completed despite emotional strain",3
-"Minor stress is present but overall stability remains",2
-"Background anxiety is present but manageable",3
-"Emotional discomfort is noticeable but not disabling",3
-"Stress levels are elevated but still controlled",4
-"Functioning is impaired due to rising anxiety",5
-"Severe worry is disrupting normal thought patterns",6
-"Emotional instability is becoming more frequent",7
-"Severe crisis state is affecting overall well-being",8
-"Safety concerns regarding thoughts are emerging",9
-"Immediate emotional danger is becoming apparent",10
-
-
-
-
-
-
-
-
 "This is so cool, I love it",1
 "That worked perfectly, amazing",1
 "Feeling great today, super productive",1
@@ -727,6 +604,188 @@ text,label
 "Feeling content, just a quiet and easy day",2
 "Had a good conversation with a colleague today",2
 "Feeling calm and mostly fine, just a bit tired",2
+"Everything feels normal today, just a bit of tiredness in the background",2
+"Morning started fine but there is a slight sense of unease",2
+"Work is manageable but focus feels slightly off",2
+"Small tasks are getting done but stress is slowly building",3
+"Some emotional heaviness is noticeable throughout the day",3
+"Routine is intact but motivation feels lower than usual",3
+"A bit of anxiety is present while handling daily responsibilities",3
+
+
+
+
+
+
+"I already took the pills and I don't know what to do",10
+"I have a knife and I'm scared of what I'm about to do",10
+"I took everything in the medicine cabinet",10
+"I'm bleeding and I can't stop it",10
+"I already did it and I'm starting to feel sick",10
+"I have a gun and I'm holding it right now",10
+"I took a bunch of pills about an hour ago",10
+"I cut myself really deep this time and it won't stop bleeding",10
+"I'm standing on the edge right now",10
+"I already swallowed them, all of them",10
+"I have the rope ready and I'm alone",10
+"It's too late, I already did something",10
+"I took something and now I feel really strange",10
+"I'm on a bridge right now and I don't know if I can stop myself",10
+"I already hurt myself badly and I'm scared",10
+"I have pills in my hand right now",10
+"I did it. I don't know how long I have.",10
+"I'm losing a lot of blood",10
+"I took an overdose maybe thirty minutes ago",10
+"I'm in my car with the engine running in the garage",10
+"I have a weapon and I'm by myself",10
+"I already jumped and someone found me",10
+"I can't feel my legs and I took something",10
+"I'm looking at the pills and I've already started taking them",10
+"I took too many and now I feel dizzy and sick",10
+"I hurt myself really seriously this time",10
+"I'm on the roof and I don't think I'm coming back down",10
+"I took all my medication and I feel strange",10
+"I already made the cut and it's bad",10
+"I think I overdosed, everything is going blurry",10
+"I did something and I'm too scared to call an ambulance",10
+"I have a knife to my wrist right now",10
+"I took a lot of pills and I'm starting to feel them",10
+"I'm actively hurting myself as I type this",10
+"I already jumped from somewhere and I'm hurt",10
+"I've taken something and I don't want to be saved",10
+"I need help right now, I've already done it",10
+"I can't stop the bleeding and I'm alone",10
+"I'm in immediate danger and I caused it myself",10
+"I'm thinking about taking all my pills tonight",9
+"I have a plan and I know exactly how I'm going to do it",9
+"I've been stockpiling medication for when I'm ready",9
+"I have the means to end my life and I'm close to using it",9
+"I know what I'm going to do and when I'm going to do it",9
+"I have everything ready, I just haven't done it yet",9
+"I'm going to hurt myself tonight, I've decided",9
+"I've written goodbye letters to my family",9
+"I'm going to jump, I've picked the place already",9
+"I have a plan and tonight feels like the night",9
+"I've been researching methods and I found one",9
+"I told myself tonight is the last night",9
+"I have the pills counted out already",9
+"I've decided I'm not going to be here tomorrow",9
+"I'm going to do it after we hang up",9
+"I've said goodbye to the people I care about",9
+"I have a specific plan and the means to carry it out",9
+"I'm going to use the gun my dad keeps at home",9
+"I keep going back to look at the knife I set out",9
+"Tonight I've decided is the night I stop fighting",9
+"I feel like I should warn you I might not make it through tonight",9
+"I gave away some of my things today just in case",9
+"I set a date and it's coming up soon",9
+"I wrote a note and sealed it",9
+"I already said my goodbyes online",9
+"I've been practicing what I would do",9
+"I know where the gun is and I'm thinking about it",9
+"I don't want to be talked out of it this time",9
+"I have a very clear plan forming and I'm not scared anymore",9
+"I feel strangely calm because I've made my decision",9
+"I feel disgusting and violated and I don't know who to talk to",9
+"Something happened to me and I feel like I need help right now",9
+"I was assaulted tonight and I'm shaking and can't calm down",9
+"Someone hurt me and I feel completely out of control",9
+"I was raped and I don't know what to do or who to call",9
+"I feel so dirty and I can't stop crying since it happened",9
+"I was attacked and I feel like I'm not in my body right now",9
+"I just got home and something terrible happened to me",9
+"I was sexually assaulted and I feel sick and terrified",9
+"I feel violated and unsafe and I need someone to talk to",9
+"He forced himself on me and I don't know who to tell",9
+"Something happened tonight that I can't even say out loud",9
+"I was hurt by someone I trusted and I feel completely broken",9
+"I can't stop shaking since it happened an hour ago",9
+"I feel like I'm in shock and I don't know what to do next",9
+"I was assaulted and I'm scared to call the police",9
+"I feel contaminated and disgusting and I just want to disappear",9
+"Someone violated me and I'm terrified and alone right now",9
+"I was raped last night and I haven't been able to move since",9
+"I feel like my body isn't mine anymore after what happened",9
+"I'm scared and I don't know who to call, something really bad happened",8
+"I was just attacked and I'm hiding and I need help",8
+"I was hurt and I'm too scared to go to the hospital alone",8
+"I was assaulted tonight and I feel completely unsafe right now",8
+"I feel like I'm falling apart and I can't handle what just happened to me",8
+"I was raped recently and I feel like I'm losing my mind",8
+"I feel completely overwhelmed and unsafe after what happened to me",8
+"I feel like I'm in crisis after what he did to me",8
+"I was violated and I can't stop having thoughts of hurting myself now",8
+"Something happened to me and now I feel like I don't want to be here",8
+"I don't know if what happened counts as assault but it felt wrong",6
+"I feel confused about what happened because I froze and didn't say no",6
+"I'm not sure if I can call it rape but it didn't feel consensual",6
+"I feel guilty about what happened even though I know it wasn't my fault",6
+"I feel like what happened to me wasn't okay but I'm scared to name it",6
+"I feel really confused and ashamed about something that happened recently",6
+"I don't know how to describe what happened but it's been tormenting me",6
+"I feel stuck between wanting to report it and being terrified to",6
+"I feel like no one will take me seriously if I tell them what happened",6
+"I'm scared to tell anyone because I don't want to ruin his life",6
+"I feel dirty and I've been scrubbing myself for an hour",7
+"Something happened to me and I can't stop feeling gross",7
+"I feel violated even though I'm not sure what to call it",7
+"I feel like damaged goods after what that person did to me",7
+"I feel like no one will believe me if I say what happened",7
+"I feel disgusting and I don't know why I feel so ashamed",7
+"Someone touched me without my consent and I feel sick about it",7
+"I keep reliving what happened and I can't make it stop",7
+"I feel like I need to shower over and over but it doesn't help",7
+"I feel humiliated and I can't look at myself right now",7
+"I was taken advantage of and I feel worthless",7
+"I feel like I deserved it somehow and that scares me",7
+"I feel broken and used and I don't know how to cope",7
+"I feel like I've lost something I can never get back",7
+"I can't eat or sleep since it happened and it's been days",7
+"I've been having nightmares every night about what he did",6
+"I feel numb and disgusting at the same time",7
+"I feel like I can't tell anyone because they'll judge me",5
+"I was assaulted a few days ago and the shame is overwhelming",7
+"I keep blaming myself even though I know I shouldn't",5
+"Something was done to me that I didn't want and I feel empty",5
+"I feel like my body betrayed me during it and I hate myself for that",7
+"I feel unsafe around people now since it happened",5
+"I feel like I'm carrying something really heavy and can't put it down",7
+"I feel exposed and vulnerable in a way I never have before",7
+"I feel like I can't trust anyone anymore after what happened",7
+"I feel worthless and ashamed and I keep isolating myself",7
+"I was assaulted and I keep minimising it but I know it was wrong",7
+"I feel frozen whenever I think about it",7
+"I feel like what happened defines me now and I hate that",7
+"I was assaulted a while back and it still affects me every day",5
+"I feel like what happened to me years ago still haunts me",5
+"I've been dealing with something that happened in the past and it still hurts",5
+"I was sexually assaulted a few years ago and I've never fully processed it",5
+"I carry what happened to me everywhere and it weighs on me",5
+"I feel like old trauma is resurfacing and I don't know why",5
+"Something happened to me a long time ago that I've never told anyone",5
+"I feel like what he did to me still lives in my body",5
+"I struggle with intimacy because of something that happened years ago",5
+"I've been having flashbacks to something traumatic from my past",5
+"I was taken advantage of when I was younger and I'm still affected",5
+"I feel like my past trauma is getting harder to manage lately",5
+"I was assaulted years ago and I've never really healed",5
+"I find it hard to feel safe in relationships because of my history",5
+"I've been in therapy for what happened but today it's hitting hard",5
+"What someone did to me years ago keeps coming up in my mind",5
+"I feel like old wounds are opening up again",5
+"I experience a lot of shame around something that happened to me",5
+"I was hurt by someone when I was young and it changed me",5
+"I feel like I've been carrying this secret for too long",5
+"I feel a bit gross and uncomfortable after someone made a comment about my body",4
+"Someone crossed a line with me today and I feel uneasy",4
+"I feel slightly violated after an uncomfortable interaction",3
+"Someone said something sexual to me that I didn't want and it's bothering me",4
+"I feel like I need to talk about something uncomfortable that happened",4
+"I had an experience that didn't feel right and I can't stop thinking about it",4
+"Someone touched me in a way that felt off and I'm unsettled",4
+"I feel a bit on edge after something happened that I didn't like",4
+"I feel weird and unsettled after a situation that crossed a boundary",4
+"Something happened that made me feel uncomfortable and a bit ashamed",4
 
 
 
@@ -737,3 +796,479 @@ text,label
 
 
 
+
+
+"I've been having nightmares about what happened and it's affecting my sleep",5
+"I keep having flashbacks to the assault and it's distressing",5
+"What happened to me keeps replaying in my head and I can't switch it off",5
+"I've been struggling to sleep since the assault because of bad dreams",5
+"I feel ashamed about what happened even though I know it wasn't my fault",5
+"I've been avoiding certain places since it happened because they remind me",5
+"I feel uncomfortable around men since what happened to me",5
+"I've been feeling anxious and jumpy since the incident",5
+"I feel like I lost my sense of safety after what was done to me",5
+"I've been struggling to concentrate since the assault happened",5
+"I feel like I need to talk to someone about something that happened to me",5
+"I've been having trouble trusting people since I was hurt",5
+"I feel emotionally raw when I think about what he did",5
+"I've been withdrawing from friends since the assault",5
+"I feel on edge most of the time since it happened",5
+"I've been having a hard time processing what was done to me",5
+"I feel like something has shifted in me since the assault",5
+"I keep thinking about what happened and it's making me anxious",5
+"I've been struggling with shame and guilt since I was assaulted",5
+"I feel like I'm still carrying what happened even though it was a while ago",5
+"I feel damaged and violated and it's hard to function right now",7
+"I can't stop thinking about what he did to me and I'm breaking down",7
+"I feel completely destroyed by what happened and I don't know how to go on",7
+"I feel like the assault has taken everything from me",7
+"I'm having constant flashbacks and I feel like I'm losing my mind",7
+"I feel like I'll never feel safe again after what he did",7
+"I feel so violated and worthless that I can barely get out of bed",7
+"I feel like my whole sense of self has collapsed since the assault",7
+"I've been having breakdowns every day since what happened to me",7
+"I feel utterly hopeless and broken since I was assaulted",7
+"I feel like I can't escape what was done to me and it's consuming me",7
+"I feel like the assault has ruined my life and I can't see past it",7
+"I feel trapped in the memory of what happened and I can't get out",7
+"I'm in constant emotional pain since the assault and nothing helps",7
+"I feel like I'm drowning in shame and hopelessness after what he did",7
+"I feel like a completely different person since the assault and I hate who I am now",7
+"I've been having intrusive thoughts about what happened that I can't control",6
+"I feel like I'm falling apart completely since I was violated",7
+"I feel so broken and disgusting that I've been thinking about hurting myself",7
+"I feel like what happened to me has destroyed any chance of happiness",7
+"I feel really shaken and upset about what happened and I can't calm down",6
+"I feel confused and distressed about what was done to me",6
+"I feel violated and I'm struggling to cope with it",6
+"I feel deeply ashamed and I can't stop crying since it happened",6
+"I feel unsafe and unsettled since the assault and it's affecting everything",6
+"I feel like I'm barely holding it together since what happened",6
+"I feel overwhelmed by emotions since the assault and I can't think straight",6
+"I feel like I'm stuck in shock and I can't process what happened",6
+"I feel humiliated and distressed and I don't know how to move forward",7
+"I feel like the assault has knocked me completely off balance",6
+"I feel like I can't cope with what happened and I keep breaking down",6
+"I feel emotionally overwhelmed since the assault and I can't calm myself",6
+"I feel trapped between wanting to report it and being too scared to",6
+"I feel like I'm losing control of my emotions since what happened",6
+"I feel deeply hurt and violated and I'm struggling to function",6
+"I feel like what happened is consuming my thoughts and I can't focus",6
+"I feel close to breaking down when I think about what he did to me",6
+"I feel like I can't escape the shame and it's affecting everything I do",6
+"I feel emotionally flooded when I think about the assault",6
+"I feel like I'm not coping well at all since what happened to me",6
+"I'm overwhelmed and falling apart but I'm still managing to function",6
+"I feel like I'm close to the edge but I haven't gone over it yet",6
+"I feel distressed and out of control but I'm still holding on",6
+"I'm barely coping and it's getting harder each day",6
+"I feel like I'm unravelling but slowly, not all at once",6
+"I'm exhausted and overwhelmed and I feel like I'm losing my grip",6
+"I feel like I'm at my limit but I haven't completely broken down",6
+"I'm struggling badly but I'm still trying to function",6
+"I feel mentally overloaded and close to shutting down completely",6
+"I feel like everything is too much and I'm starting to fracture",6
+"I feel like I'm in a really dark place and I can't find my way out",7
+"I'm having constant breakdowns and I don't know how much more I can take",7
+"I feel completely hopeless and I don't believe things will get better",7
+"I feel like I've lost control of everything and I can't get it back",7
+"I feel like I'm drowning and there's no one to pull me out",7
+"I'm in so much pain emotionally that I can't function at all",7
+"I feel like the darkness is winning and I don't have the strength to fight",7
+"I feel trapped and suffocated by my emotions and I can't escape",7
+"I feel utterly hopeless and like nothing will ever change",7
+"I feel like I'm completely falling apart and there's no way to stop it",7
+"I feel like I'm beyond help and I don't see the point anymore",7
+"I feel like I'm disappearing inside and no one can see it",7
+"I feel broken in a way that I don't think can be fixed",7
+"I feel like everything has collapsed and I have nothing left",7
+"I'm in constant emotional crisis and it's becoming unbearable",7
+"I feel like I'm losing my mind and I can't hold myself together",7
+"I feel like I've hit a wall and I have absolutely nothing left",7
+"I feel hopeless and trapped and I don't know how to go on",7
+"I feel like I'm at the bottom and I can't see any way up",7
+"I feel completely overwhelmed and I've stopped being able to cope at all",7
+"I'm stressed and it's been building for a while now",4
+"I feel emotionally drained but I'm still managing my day",4
+"I've been feeling on edge and it's starting to affect my focus",4
+"I'm struggling to keep up but I'm still getting things done",4
+"I feel overwhelmed but I know I can get through it",4
+"I'm anxious and tense but it's not unmanageable",4
+"I've been feeling flat and low energy and things are piling up",4
+"I feel like I'm carrying a lot right now but I'm coping",4
+"I'm stressed and distracted but I haven't lost control",4
+"I feel run down and emotionally tired but I'm still functioning",4
+"I'm a bit overwhelmed and I'm finding it hard to switch off",4
+"I feel frustrated and stretched thin but I'm managing",4
+"I've been feeling unsettled and anxious but it comes and goes",4
+"I feel like things are getting on top of me a little",4
+"I'm under pressure and it's wearing me down but I'm okay",4
+"I feel like I need a break but I'm still getting through",4
+"I've been feeling tense and irritable and it's affecting my mood",4
+"I feel like I'm juggling too much and something might slip",4
+"I'm overwhelmed with tasks and I feel a bit panicked about it",4
+"I feel emotionally stretched but not broken",4
+"I feel low and a bit hopeless about certain things in my life",5
+"I've been struggling to stay motivated and it's been going on a while",5
+"I feel like I'm not coping as well as I usually do",5
+"I've been feeling disconnected and sad most days",5
+"I feel like I'm losing my grip slightly but I'm still holding on",5
+"I've been feeling really low and it's starting to affect my work",5
+"I feel like I'm running on empty and I don't know how to refill",5
+"I've been struggling with dark moods that come in waves",5
+"I feel like things are getting harder and I'm not bouncing back",5
+"I feel drained in a way that sleep doesn't fix",5
+"I've been feeling really anxious and low and it's persistent",5
+"I feel like I'm slowly losing my ability to cope",5
+"I've been having intrusive negative thoughts that won't stop",5
+"I feel like I'm sliding backwards and I can't stop it",5
+"I'm struggling more than usual and it's been going on for weeks",5
+"I feel like I'm carrying more than I can hold",5
+"I've been feeling hopeless about certain things and it's getting heavier",5
+"I feel like I'm not okay but I'm not in crisis either",5
+"I've been feeling emotionally exhausted for a long time now",5
+"I feel like I'm treading water but barely keeping my head up",5
+"I feel like something is really wrong and I'm scared",8
+"I'm in severe distress and I can't calm myself down at all",8
+"I feel like I'm at breaking point and I don't know what I'll do",8
+"I'm in crisis and everything feels completely unmanageable",8
+"I feel like I'm losing control and it's escalating fast",8
+"I feel emotionally collapsed and I can't pull myself together",8
+"I'm overwhelmed to a point where I can't function at all",8
+"I feel like I'm in freefall and there's nothing to grab onto",8
+"I'm experiencing severe emotional pain that won't stop",8
+"I feel like I'm at the absolute limit of what I can endure",8
+"I feel unsafe in my own mind and I'm really frightened",8
+"I'm in a very bad place and I feel like I need urgent help",8
+"I feel like I might completely lose control at any moment",8
+"I'm in crisis and it's getting worse not better",8
+"I feel like I'm about to break completely and I'm terrified",8
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"I feel like I'm in a genuine crisis right now and I don't know what to do",8
+"I'm in severe distress and I can't bring myself back down",8
+"I feel like everything is collapsing and I can't stop it",8
+"I'm experiencing intense emotional pain that feels unbearable",8
+"I feel completely out of control and I'm frightened by it",8
+"I'm in a very dark place and I feel like I need urgent help",8
+"I feel like I'm on the verge of completely breaking down",8
+"I'm overwhelmed to a point I've never been at before",8
+"I feel like my mind is working against me and I can't stop it",8
+"I'm in crisis and I can't see a way through it",8
+"I feel like I'm barely existing right now",8
+"I'm so distressed I can't eat or sleep or function at all",8
+"I feel like something has snapped inside me and I can't fix it",8
+"I'm in a state of complete emotional collapse",8
+"I feel like I've lost all ability to cope with anything",8
+"I'm overwhelmed by thoughts I can't control and it's terrifying",8
+"I feel like I'm disintegrating emotionally",8
+"I'm in severe psychological pain and nothing is helping",8
+"I feel like I'm at the absolute end of my rope",8
+"I'm having a mental health crisis and I don't know how to handle it",8
+"I feel like I'm not safe from my own thoughts right now",8
+"I'm completely overwhelmed and I feel like I might do something I'll regret",8
+"I feel like I'm losing my grip on reality under the weight of this",8
+"I'm in so much distress that I can't think about anything else",8
+"I feel like I'm approaching a point of no return emotionally",8
+"I'm experiencing emotional pain so intense it feels physical",8
+"I feel like I'm in free fall and there's nothing to catch me",8
+"I'm in crisis mode and everything feels desperate and urgent",8
+"I feel like I'm about to shatter completely",8
+"I'm overwhelmed and I feel genuinely unsafe right now",8
+"I feel like the walls are closing in and I can't breathe",8
+"I'm in a bad place mentally and it's escalating quickly",8
+"I feel like I can't survive feeling this way much longer",8
+"I'm having severe panic and I can't bring it under control",8
+"I feel like I've reached a point where I need someone to intervene",8
+"I'm in intense distress and everything feels hopeless and urgent",8
+"I feel like I'm moments away from completely losing it",8
+"I'm experiencing a level of emotional pain that scares me",8
+"I feel like I'm in genuine danger from my own mental state",8
+"I'm in crisis and I feel like time is running out",8
+"I feel like I'm barely surviving right now and I need help",8
+"I'm overwhelmed and I feel like I could act on something dangerous",8
+"I feel like everything is falling apart faster than I can process",8
+"I'm in severe distress and I feel completely unsafe in my own mind",8
+"I feel like I'm in the middle of a breakdown and I can't stop it",8
+"I'm experiencing thoughts I've never had before and they frighten me",8
+"I feel like I need immediate help and I don't know who to call",8
+"I'm in an acute crisis and I feel like I'm running out of options",8
+"I feel like my mind is in a state of emergency right now",8
+"I'm in so much pain emotionally that I genuinely don't know what I'll do",8
+"I feel like I'm slipping into somewhere I won't be able to come back from",8
+"I'm having urges to hurt myself and I'm scared of them",8
+"I feel like I could do something to myself and that terrifies me",8
+"I'm thinking about self-harm more than I ever have before",8
+"I feel like I'm losing the battle against my own thoughts",8
+"I'm struggling with urges I've never had before and I don't know what to do",8
+"I feel like I'm on the edge of doing something I can't take back",8
+"I'm having thoughts about hurting myself that are getting louder",8
+"I feel like I can't guarantee my own safety right now",8
+"I'm terrified of what I might do if I'm left alone tonight",8
+"I feel like I'm fighting to stay safe and I'm losing",8
+"I've been thinking about ending things and it's scaring me",9
+"I feel like I don't want to be alive anymore and I can't shake it",9
+"I'm having serious thoughts about suicide and I don't know what to do",9
+"I feel like there's no future for me and I've started planning",9
+"I've been thinking about ways to end my life and it feels real",9
+"I feel like I'm ready to give up and I've started saying goodbye",9
+"I'm in a very dark place and I've been making plans I'm scared to act on",9
+"I feel like ending my life is the only way out of this pain",9
+"I've been researching how to do it and that scares me",9
+"I feel completely hopeless and I've decided I don't want to go on",9
+"I'm having constant thoughts of suicide and I can't distract myself",9
+"I feel like everyone would be better off without me and I believe it",9
+"I've been thinking about suicide every day and the thoughts are getting stronger",9
+"I feel like I've made peace with ending things and that worries me",9
+"I'm scared of my own thoughts because they keep going to suicide",9
+"I feel like I have a plan and I'm not sure I can stop myself",9
+"I've been thinking about not being here anymore and it feels like relief",9
+"I feel like I'm on the edge and one more thing will push me over",9
+"I'm having intrusive suicidal thoughts that I can't control",9
+"I feel like I've given up hope and I'm thinking about ending it",9
+"I feel like I want to disappear permanently and I've started thinking about how",9
+"I'm in so much pain that I've started thinking suicide is the answer",9
+"I feel like I've reached the end and there's nothing left to try",9
+"I've been thinking about suicide and I feel calm about it which scares me",9
+"I feel like I'm going to act on my thoughts soon if I don't get help",9
+"I'm holding something I could hurt myself with and I don't know if I'll use it",9
+"I feel like I've already decided and I'm just waiting",9
+"I've told people goodbye without them knowing that's what I was doing",9
+"I feel like tonight might be the night and I'm scared of myself",9
+"I'm fighting the urge to act on my suicide plan right now",9
+"I took some pills and I'm not sure if it was enough to do anything",10
+"I've cut myself badly and I can't stop the bleeding",10
+"I'm standing somewhere high and I'm thinking about jumping",10
+"I've taken everything I could find and I feel strange",10
+"I have something around my neck and I don't know if I'll take it off",10
+"I've already hurt myself and I need help but I'm scared to call",10
+"I took an overdose and I'm starting to feel it",10
+"I'm in the process of hurting myself right now",10
+"I've done something and I don't know if I want to be saved",10
+"I took all my medication and now I'm waiting",10
+"I've hurt myself seriously and I'm alone and scared",10
+"I'm on a ledge and I don't know if I'm going to come down",10
+"I took something a while ago and I'm starting to feel sick",10
+"I've been cutting and it's gone further than I meant it to",10
+"I have a weapon and I've already used it on myself",10
+"I took pills an hour ago and I haven't called anyone",10
+"I'm hurting myself right now and I can't stop",10
+"I've done something irreversible and I'm frightened",10
+"I took everything in the house and I'm feeling dizzy",10
+"I've hurt myself badly and I need help right now",10
+"I'm bleeding and I don't know if I should call for help",10
+"I've already jumped and someone found me and I'm hurt",10
+"I took an overdose and I'm alone and I don't want to be saved",10
+"I'm in the middle of an attempt and I reached out",10
+"I've done it and I'm scared now that it's real",10
+"I took all my tablets and now I feel strange and scared",10
+"I'm using something to hurt myself and I can't stop",10
+"I've already done something and I don't know how much time I have",10
+"I took a lot of pills and I'm starting to lose feeling in my hands",10
+"I've hurt myself and I think I need an ambulance but I'm scared to call",10
+"I feel like I want to die and I've already started",10
+"I'm in the middle of it and part of me wants help",10
+"I've taken something and I'm not sure I made the right decision",10
+"I already did it and now I'm terrified",10
+"I'm hurting myself right now and I reached out because I'm scared",10
+"I've done something dangerous and I need someone to know",10
+"I took everything and now I just want someone to talk to",10
+"I've already gone through with it and I'm alone",10
+"I'm in immediate physical danger from what I've done to myself",10
+"I've hurt myself seriously and I'm hiding and I don't know what to do",10
+"I took something and I'm starting to feel very sick and I'm scared",10
+"I'm on a bridge and I've already stepped to the edge",10
+"I did something to myself and now I'm not sure I want it to end this way",10
+"I've taken an overdose and part of me is hoping someone finds this",10
+"I hurt myself badly and I need help but I'm ashamed to call",10
+"I took all the pills and I'm writing this because I don't know what else to do",10
+"I've done it and I'm scared and I don't know what happens now",10
+"I'm actively in crisis and I've already acted on it",10
+"I took something and I'm reaching out because I'm frightened",10
+"I've hurt myself and I'm alone and I need someone right now",10
+"I did something and it's real now and I'm terrified",10
+"I took everything I had and now I feel sick and I'm alone",10
+
+
+
+
+
+
+
+"I was assaulted tonight and I feel like I'm in crisis",9
+"What he did to me has pushed me to a breaking point",9
+"I was raped and I feel like I can't go on after this",9
+"I feel like what happened to me tonight has destroyed everything",9
+"I was violated and now I'm having thoughts of ending it all",9
+"What happened to me has left me feeling completely hopeless",9
+"I was assaulted and I feel like I don't want to be here anymore",9
+"I can't stop shaking and I keep thinking about not wanting to live",9
+"Something terrible was done to me and I feel like giving up",9
+"I was hurt by someone and now I feel like there's no point going on",9
+"I feel like I'm in crisis and I can't calm down after what happened",8
+"I was assaulted and I feel like I'm completely falling apart",8
+"What he did to me has pushed me into a really dangerous place",8
+"I was violated and I feel like I'm losing control of my thoughts",8
+"I feel like I'm breaking down completely since the assault",8
+"I was attacked and I feel like I genuinely need urgent help",8
+"I feel unsafe and like I'm in crisis after what was done to me",8
+"I was assaulted and I feel like I'm at my absolute limit",8
+"What happened to me tonight has left me in severe distress",8
+"I was hurt and I feel like I'm on the verge of doing something dangerous",8
+"I feel like I might hurt myself after what he did to me",9
+"I was assaulted and I've been thinking about ending things since",9
+"I feel completely hopeless and unsafe after what happened to me",9
+"I was violated and I can't stop thinking about not wanting to exist",9
+"I feel like what happened has taken away any reason to keep going",9
+"I think I might have taken too many pills, I'm not sure",10
+"I think I did something and I'm scared but I don't want to call anyone",10
+"I'm not sure if what I took will do anything but I took a lot",10
+"I think I overdosed but I don't know if it's serious",10
+"I might have done something bad, I took some stuff a while ago",10
+"I think I hurt myself worse than I meant to",10
+"I'm not sure what I took exactly but I took everything I could find",10
+"I think I went too far this time and I'm scared",10
+"I might need help but I don't know if what I did counts",10
+"I took something earlier and I've been feeling strange ever since",10
+"I think I did it, I'm not sure I want to be saved",10
+"Something happened and I might need help, I took some pills",10
+"I'm not sure if I'm okay, I took a lot of something",10
+"I think I went through with it and now I'm scared",10
+"I did something and I don't know if it was enough to matter",10
+"I feel like everything is ending and I've already done something about it",10
+"I took something and I'm not sure how much time I have",10
+"I think I hurt myself badly enough that I should call someone",10
+"I might have done something serious, I'm feeling really strange",10
+"I took a lot and I'm starting to feel it but I'm scared to call",10
+"I think I overdosed and I'm alone and I don't know what to do",10
+"I'm not sure if what I did was enough but I feel sick now",10
+"I did something and part of me is reaching out because I'm scared",10
+"I think I went too far and I'm not sure I want help",10
+"I took everything I had and now I feel strange and I'm scared",10
+"I feel like it's over and I've already started doing something",10
+"I'm not sure I want to be saved but I think I need help",10
+"I did something and I'm frightened now that it's real",10
+"I think I hurt myself and I don't know if I should call someone",10
+"I took something and now I'm not sure I made the right choice",10
+"I feel like I've already decided and I've started acting on it",10
+"I think I did something irreversible and I'm scared",10
+"I took a lot of pills and I feel strange and I don't know what to do",10
+"I might have gone too far this time and I'm reaching out",10
+"I did it and now I'm not sure and I don't know who to call",10
+"I think I overdosed a little while ago and I feel sick",10
+"I'm not sure what I took will do anything but I feel weird now",10
+"I took something and I'm scared but I don't want an ambulance",10
+"I think I hurt myself seriously but I'm too scared to say",10
+"I feel like I've done something and I can't take it back",10
+"I'm not sure if I need help but I took a lot of something",10
+"I did something and I think I might be in danger",10
+"I took everything in the cabinet and now I feel strange",10
+"I think I went through with it but part of me wants help",10
+"I'm not sure I'm okay after what I just did to myself",10
+"I took something and I reached out because I'm frightened",10
+"I feel like it might be too late but I'm still here talking",10
+"I think I hurt myself and I'm alone and I don't know what to do",10
+"I did something serious and I'm scared to tell anyone",10
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+"I've been looking up methods online and I can't stop myself",9
+"I keep finding myself researching ways to end things",9
+"I've been reading about it a lot and it's starting to feel real",9
+"I looked it up again today and I saved the page",9
+"I've been researching and I think I've found something that would work",9
+"I keep coming back to the same search results and I don't know why",9
+"I've been looking into it more seriously than I want to admit",9
+"I researched it last night and I feel strangely calm about it",9
+"I've been looking things up that I probably shouldn't be",9
+"I keep researching methods even though part of me knows I shouldn't",9
+"I went back to check on it again today",9
+"I keep going to look at it even though I tell myself not to",9
+"I've been checking on it every day this week",9
+"I went and looked at it again tonight and I held it for a while",9
+"I keep going back to where I keep it and just standing there",9
+"I've been visiting the same spot every day this week",9
+"I went back to the bridge again today just to stand there",9
+"I keep going to the place I've picked and I don't know how to stop",9
+"I drove to the spot again tonight",9
+"I went back again and stayed longer this time",9
+"I started giving away things that matter to me",9
+"I've been giving my stuff away and people haven't noticed",9
+"I gave away something really important to me today",9
+"I've been quietly giving things to people I care about",9
+"I gave my friend something I've had for years and didn't explain why",9
+"I've been sorting through my things and giving them away",9
+"I dropped something off at my sister's without telling her why",9
+"I've been getting rid of things like I won't need them",9
+"I gave away my most prized possession today",9
+"I've been quietly clearing out my room",9
+"I wrote something down last night that felt like a goodbye",9
+"I've been messaging people things that feel like final things to say",9
+"I sent a message to someone I hadn't spoken to in years",9
+"I called my mum just to tell her I love her and I couldn't explain why",9
+"I've been telling people things I've never said before",9
+"I wrote letters to the people I care about and sealed them",9
+"I sent a message tonight that felt like a last one",9
+"I've been saying goodbye to people without them knowing that's what I'm doing",9
+"I told my best friend everything I love about her today",9
+"I've been reaching out to people I lost touch with to make things right",9
+"I made arrangements for something today that I've been putting off",9
+"I sorted out some things that needed sorting in case something happens",9
+"I've been getting my affairs in order quietly",9
+"I did something practical today to prepare and it felt final",9
+"I sorted out my passwords and left them somewhere someone could find them",9
+"I've been thinking about who would find me and trying to make it easier",9
+"I cleaned my room completely today for the first time in months",9
+"I deleted a lot of things from my phone today",9
+"I wrote down all the things people would need to know",9
+"I've been tying up loose ends and it's giving me a strange sense of peace",9
+"I have it with me right now and I keep touching it",10
+"I've taken it out and I'm holding it and I don't know what I'll do",10
+"I'm sitting with the pills in front of me right now",10
+"I have everything ready and I'm just sitting here",10
+"I've got it in my hand and I'm trying to decide",10
+"I took it out and I'm looking at it right now",10
+"I'm holding the bottle and I keep opening and closing it",10
+"I have the means right in front of me and I'm not sure I can resist",10
+"I've laid everything out and I'm sitting here looking at it",10
+"I have it and I'm alone and I'm not sure I'm safe right now",10
+"I went to the spot and I'm there right now",10
+"I'm standing at the place I picked and I'm on the edge",10
+"I drove to the bridge and I'm here now",10
+"I'm at the place I chose and I don't know if I'll leave",10
+"I came to the spot and now I'm not sure I can walk away",10
+"I went back and this time I think I'm going to do it",10
+"I'm here and it feels different this time",10
+"I came back to the place and I've been here for a while now",10
+"I'm at the spot and I've been sitting here for hours",10
+"I went to the place and I think tonight is the night",10
+"I took something a little while ago and I'm waiting to see what happens",10
+"I took some pills earlier and I'm not sure if I should say something",10
+"I did something about an hour ago and I'm starting to feel strange",10
+"I took something and I don't know if I should call for help",10
+"I think I took too much but I'm not sure I want to do anything about it",10
